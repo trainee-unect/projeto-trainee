@@ -12,6 +12,7 @@
     --cor5: #7ccbe0;
     --cor6: #a3a3a3;
     --cor7: #89c5d5;
+    --cor8: #63b3c9;
 
     --fonte1: "Poppins", sans-serif;
     --fonte2: "Open Sans", sans-serif;
@@ -35,7 +36,7 @@ header {
     margin: auto;
     height: 140px;
     border: 1px solid rgba(0, 0, 0, 0.103);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.151);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -244,7 +245,7 @@ main{
     background-color: var(--cor6); 
     border-radius: 50%; 
 }
-
+/*
 .info{
     width: 100%;
     height: 300px;
@@ -271,7 +272,7 @@ main{
 }
 
 .texto-quem-somos{
-    height: 300px;
+    max-height: 300px;
     width: 690px;
     margin-right: 480px;
 }
@@ -284,9 +285,153 @@ main{
     padding-bottom: 40px;
 }
 
-.texto-quem-somos > p{
-    color: #0f637a;
+.texto-info{
+    color: var(--cor2);
     font-family:var(--fonte2);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 2%;
+}
+
+.container-servicos{
+    background-image: url(imagens/fundo-quem-somos.png);
+    width: 100%;
+    height: 743px;
+    background-color: lightgray;
+}
+
+.servicos1{
+    background-color: var(--cor5);
+    background-image: url(imagens/fundo-quem-somos.png);
+    height: 300px;
+    display: flex;
+    align-items: center;
+    gap: 92px;
+}
+
+.servicos1 > img{
+    width: 320px;
+    height: 260px;
+    margin-left: 480px;
+}
+
+.servicos1 > p{
+    margin-right: 480px;
+    max-height: 300px;
+}
+
+*/
+/*                                       Caixa do Quem-Somos                                             */
+.container-info{
+    width: 1920px;
+}
+
+.quem-somos{
+    width: 100%;
+    height: 300px;
+    background-color: var(--cor7);
+    background-image: url(imagens/fundo-quem-somos.png);
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+
+.quem-somos > img{
+    width: 300px;
+    height: 300px;
+    margin-left: 500px;
+}
+
+.conteudo-quem-somos{
+    height: 300px;
+}
+
+.conteudo-quem-somos > h2{
+    color: var(--cor2);
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 35px;
+    margin-top: 25px;
+}
+
+.conteudo-quem-somos > p{
+    max-width: 700px;
+    max-height: 300px;
+    color: var(--cor2);
+    font-family: var(--fonte2);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 2%;
+}
+
+/*                                    Caixa de Serviços                                             */
+
+.servicos1{
+    width: 100%;
+    height: 420px;
+    background-color: var(--cor8);
+    background-image: url(imagens/fundo-quem-somos.png);
+    display: flex;
+    align-items: center;
+    gap: 92px;
+}
+
+.conteudo-servicos{
+    margin-left: 500px;
+    height: 420px;
+}
+
+.conteudo-servicos > h2{
+    color: var(--cor2);
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 25px;
+    margin-top: 35px;
+}
+
+.conteudo-servicos > img{
+    border: 1px solid var(--cor8);
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.205);
+}
+
+.texto-servicos1{
+    max-width: 620px;
+    max-height: 150px;
+    color: var(--cor2);
+    font-family: var(--fonte2);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 2%;
+}
+/*                              Caixas Serviços 2                                   */
+
+.servicos2{
+    width: 100%;
+    height: 325px;
+    background-color: var(--cor7);
+    background-image: url(imagens/fundo-quem-somos.png);
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+
+.servicos2 > img{
+    border: 1px solid var(--cor8);
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.205); 
+}
+
+.servicos2 > p{
+    margin-left: 500px;
+    max-width: 620px;
+    max-height: 120px;
+    color: var(--cor2);
+    font-family: var(--fonte2);
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;

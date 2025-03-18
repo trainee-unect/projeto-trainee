@@ -4,68 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Pindorama Pets</title>
 </head>
 <body>
+
     <header>
-        <div class="header">
-            <a href="">
-                <img src="imagens/Layer_2.svg" alt="Logo">
-            </a>
+        <div class="logo">
+            <a href="#"><img src="imagens/logo-header.png" alt="Logo da Pindorama Pets"></a>
+        </div>
         <nav>
-            <a href="#" class="links">Início</a>
-            <a href="#" class="links">Seviços</a>
-            <a href="#" class="links">Sobre nós</a>
-            <a href="#" class="links">Contatos</a>
+            <ul class="navegação">
+                <li><a href="#" class="menu">Inicio</a></li>
+                <li><a href="#" class="menu">Serviços</a></li>
+                <li><a href="#" class="menu">Sobre nós</a></li>
+                <li><a href="#" class="menu">Contato</a></li>
+            </ul>
         </nav>
-        </div>
+             
     </header>
+
     <main>
-        <div class=container1>
-            <div class="cont">
-                <h1 class="txtPrincipal">Cuidando do Seu Pet com <br> Profissionalismo e Carinho</h1>
-                <button class="btnPrincipal">Entre em contato</button>
+        <section class="contato">
+                <h1 class="titulo-contato">Cuidando do Seu Pet com <br>Profissionalismo e Carinho</h1>
+                <!--<div class="imagem-contato">
+                    <img id="imagem-animal" src="icone-contato.png" alt="Icone">
+                </div>-->
+                <div class="caixa-contato">
+                    <button class="btContato">Entre em Contato</button>
+                    <div class="animais-contato border">
+                        <img src="imagens/animais-contato.png" alt="Animais">
+                    </div>
+                </div>      
+        </section>
+
+        <section class="carrossel">
+            <!--<button><img src="flecha-esquerda.png" alt="Flecha Esquerda"></button>
+            <button><img src="flecha-esquerda.png" alt="Flecha Esquerda"></button>-->
+            <div class="banner-carrossel">
+                <div class="centro-carrossel">
+                    <h1>Campanha de Vacinação</h1>
+                    <div class="">
+                        <p>Nos dias 19 a 28 de Novembro</p>
+                        <button class="btCarrossel">Saiba Mais</button>
+                    </div>
+                </div>     
             </div>
-            <div class="imagens">
-                <img class = "imgBanner" src="imagens/img.svg" alt="">
-            </div>
-
-        </div>
-
-        <div class="container2">
-            <div class="container2_">
-                <img src="imagens/arrow_back_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                <div class="container2Dentro">
-
+            <div class="div-debaixo">
+                <div class="circulos">
+                    <a href="#"><div class="circulo"></div></a>
+                    <a href="#"><div class="circulo"></div></a>
+                    <a href="#"><div class="circulo"></div></a>               
                 </div>
-                <img src="imagens/arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
             </div>
-                <img class="carrossel" src="imagens/Component 1.svg" alt="">
-        </div> 
+        </section>
 
-        <div class="container3">
-            <img class="logoContainer" src="imagens/logo.svg" alt="">
-            <div class="textQS">
-                <h1>Quem somos?</h1>
-            <p>Nossa clínica veterinária é comprometida com o cuidado e bem-estar <br>de cada pet, com uma equipe dedicada e instalações modernas,<br> buscamos garantir saúde e conforto em cada atendimento. Cuidamos <br>do seu animalzinho como se fosse nosso!</p>
+        <section class="info ">
+            <div class="quem-somos ">
+                <div class="logo-quem-somos ">
+                    <img src="imagens/logo-quem-somos.png" alt="Logo Quem Somos?">
+                </div>
+                <div class="texto-quem-somos ">
+                    <h2>Quem somos?</h2>
+                    <p>Nossa clínica veterinária é comprometida com o cuidado e bem-estar de cada pet, com uma equipe dedicada e instalações modernas, buscamos garantir saúde e conforto em cada atendimento. Cuidamos  do seu animalzinho como se fosse nosso!</p>
+                </div>
             </div>
-        </div>
-        <div class="container4">
-            <div class="container4_">
-                <h1>Nossos serviços</h1>
-                <img class = "imagemC4" src="imagens/3c60c5371a0a7ab73c06998b488ee303.jpg" alt="">
-            </div>
-                <p class="textoC4">Na nossa clínica veterinária, cada consulta é realizada com dedicação e atenção aos detalhes, garantindo o melhor cuidado para o seu pet. Contamos com uma equipe experiente e atualizada para oferecer diagnósticos precisos e tratamentos eficazes. </p> 
-        </div>
-
-            
+        </section>
     </main>
-    <footer>
-        
-    </footer>
+
+    <footer></footer>
 </body>
 </html>

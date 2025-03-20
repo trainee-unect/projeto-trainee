@@ -13,6 +13,7 @@
     --cor6: #a3a3a3;
     --cor7: #89c5d5;
     --cor8: #63b3c9;
+    --cor9: #6BB7CB;
 
     --fonte1: "Poppins", sans-serif;
     --fonte2: "Open Sans", sans-serif;
@@ -409,4 +410,32 @@ main{
     width: 1180px;
     height: 626px;
     margin-bottom: 37px;
+}
+
+.comentario1, .comentario2, .comentario3 {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.btnComentarios {
+    
+    background-color: var(--cor3);
+    border-radius: 8px;
+    height: 30px;
+    width: 40px;
+    padding: 5px 10px 5px 10px;
+    overflow-x: visible;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    border-color: #063643;
+}
+
+.btnComentarios:hover {
+    background-color: var(--cor9);
+}
+
+.btnComentarios:active {
+    background-color: var(--cor2);
 }

@@ -13,6 +13,7 @@
     --cor6: #a3a3a3;
     --cor7: #89c5d5;
     --cor8: #63b3c9;
+    --cor9: #6BB7CB;
 
     --fonte1: "Poppins", sans-serif;
     --fonte2: "Open Sans", sans-serif;
@@ -88,8 +89,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 30px;  
+    align-items: center; 
 }
 
 .contato {
@@ -99,7 +99,8 @@ main{
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-    margin-top: 16px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .caixa-contato{
@@ -164,7 +165,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 0px;
+    margin-bottom: 30px;
 }
 
 .banner-carrossel {
@@ -245,83 +246,6 @@ main{
     background-color: var(--cor6); 
     border-radius: 50%; 
 }
-/*
-.info{
-    width: 100%;
-    height: 300px;
-    background-color: var(--cor7);
-    background-image: url(imagens/fundo-quem-somos.png); 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.quem-somos{
-    display: flex;
-    align-items: center;
-    gap: 103px;
-}
-
-.logo-quem-somos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-    width: 300px;
-    margin-left: 480px;
-}
-
-.texto-quem-somos{
-    max-height: 300px;
-    width: 690px;
-    margin-right: 480px;
-}
-
-.texto-quem-somos > h2{
-    color: var(--cor2);
-    font-weight: bold;
-    font-size: 24px;
-    margin-top: 20px;
-    padding-bottom: 40px;
-}
-
-.texto-info{
-    color: var(--cor2);
-    font-family:var(--fonte2);
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
-    letter-spacing: 2%;
-}
-
-.container-servicos{
-    background-image: url(imagens/fundo-quem-somos.png);
-    width: 100%;
-    height: 743px;
-    background-color: lightgray;
-}
-
-.servicos1{
-    background-color: var(--cor5);
-    background-image: url(imagens/fundo-quem-somos.png);
-    height: 300px;
-    display: flex;
-    align-items: center;
-    gap: 92px;
-}
-
-.servicos1 > img{
-    width: 320px;
-    height: 260px;
-    margin-left: 480px;
-}
-
-.servicos1 > p{
-    margin-right: 480px;
-    max-height: 300px;
-}
-
-*/
 /*                                       Caixa do Quem-Somos                                             */
 .container-info{
     width: 1920px;
@@ -392,12 +316,6 @@ main{
     margin-top: 35px;
 }
 
-.conteudo-servicos > img{
-    border: 1px solid var(--cor8);
-    border-radius: 8px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.205);
-}
-
 .texto-servicos1{
     max-width: 620px;
     max-height: 150px;
@@ -418,12 +336,7 @@ main{
     display: flex;
     align-items: center;
     gap: 64px;
-}
-
-.servicos2 > img{
-    border: 1px solid var(--cor8);
-    border-radius: 8px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.205); 
+    margin-bottom: 48px;
 }
 
 .servicos2 > p{
@@ -436,4 +349,93 @@ main{
     font-size: 20px;
     line-height: 26px;
     letter-spacing: 2%;
+}
+
+/*                          Caixa Profissionais                             */
+
+.profissionais{
+    width: 1180px;
+    height: 460px;
+    background-color: var(--cor1);
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 48px;
+}
+
+.conteiner-profissional{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.profissionais > h2{
+    margin-top: 40px;
+    margin-left: 80px;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--cor2);
+}
+
+.conteudo-profissionais{
+    height: 296px;
+    width: 240px;
+    margin-top: 40px;  
+}
+
+.conteudo-profissionais > img{
+    height: 230px;
+    width: 230px;
+}
+
+.conteudo-profissionais > h3{
+    font-family: var(--fonte2);
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--cor2);
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.conteudo-profissionais > p{
+    font-family: var(--fonte2);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--cor2);
+    text-align: center;
+}
+
+/*                                          Caixa Avaliaçoes                                */
+
+.avaliacoes{
+    width: 1180px;
+    height: 626px;
+    margin-bottom: 37px;
+}
+
+.comentario1, .comentario2, .comentario3 {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.btnComentarios {
+    
+    background-color: var(--cor3);
+    border-radius: 8px;
+    height: 30px;
+    width: 40px;
+    padding: 5px 10px 5px 10px;
+    overflow-x: visible;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    border-color: #063643;
+}
+
+.btnComentarios:hover {
+    background-color: var(--cor9);
+}
+
+.btnComentarios:active {
+    background-color: var(--cor2);
 }

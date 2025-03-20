@@ -31,19 +31,14 @@ let paginaAtual = 1;
 
             document.getElementById('paginaAtual').textContent = paginaAtual;
 
-            // Exibe apenas os comentários da página atual
             comentarios.forEach(comentario => {
                 comentario.style.display = comentario.getAttribute('data-pagina') == paginaAtual ? 'block' : 'none';
             });
 
-            
-
-            // Desativa os botões quando estiver no início ou fim da navegação
             document.getElementById('prev').disabled = paginaAtual === 1;
             document.getElementById('next').disabled = paginaAtual === totalPaginas;
 
-            
+
         }
 
-        // Inicializa a primeira página ao carregar
         trocarPagina();

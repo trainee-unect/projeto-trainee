@@ -1,7 +1,13 @@
-const linkServicos = document.getElementById("navServicos")
-const linkSobre = document.getElementById("navSobre")
 const linkInicio = document.getElementById("navInicio")
+const linkSobre = document.getElementById("navSobre")
+const linkServicos = document.getElementById("navServicos")
 const linkContato = document.getElementById("navContato")
+
+linkInicio.addEventListener("click", (e) => {
+    const elemento = document.getElementById("inicio")
+    e.preventDefault();
+    window.scrollTo({top: elemento.offsetTop, behavior: "smooth"})
+})
 
 linkServicos.addEventListener("click", (e) => {
     const elemento = document.getElementById("servicos1")
@@ -15,7 +21,8 @@ linkSobre.addEventListener("click", (e) => {
     window.scrollTo({top: elemento.offsetTop, behavior: "smooth"})
 })
 
-linkInicio.addEventListener("click", (e) => {
+linkContato.addEventListener("click", (e) => {
+    const elemento = document.getElementById("contato")
     e.preventDefault();
-    window.scrollTo({top: 0, behavior: "smooth"})
+    window.scrollTo({top: elemento.offsetTop, behavior: "smooth"})
 }) 

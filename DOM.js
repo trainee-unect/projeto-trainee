@@ -12,13 +12,13 @@ linkInicio.addEventListener("click", (e) => {
 linkServicos.addEventListener("click", (e) => {
     const elemento = document.getElementById("servicos1")
     e.preventDefault();
-    window.scrollTo({top: elemento.offsetTop, behavior: "smooth"})
+    window.scrollTo({ top: elemento.offsetTop, behavior: "smooth" })
 })
 
 linkSobre.addEventListener("click", (e) => {
     const elemento = document.getElementById("quem-somos")
     e.preventDefault();
-    window.scrollTo({top: elemento.offsetTop, behavior: "smooth"})
+    window.scrollTo({ top: elemento.offsetTop, behavior: "smooth" })
 })
 
 linkContato.addEventListener("click", (e) => {
@@ -26,6 +26,7 @@ linkContato.addEventListener("click", (e) => {
     e.preventDefault();
     window.scrollTo({top: elemento.offsetTop, behavior: "smooth"})
 }) 
+
 
 let paginaAtual = 1;
 

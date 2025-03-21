@@ -27,6 +27,7 @@ linkContato.addEventListener("click", (e) => {
     window.scrollTo({top: elemento.offsetTop, behavior: "smooth"})
 }) 
 
+
 let paginaAtual = 1;
 
         function trocarPagina(acao) {

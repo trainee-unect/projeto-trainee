@@ -413,6 +413,34 @@ main{
     margin-bottom: 37px;
 }
 
+.comentario1, .comentario2, .comentario3 {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.btnComentarios {
+    
+    background-color: var(--cor3);
+    border-radius: 8px;
+    height: 30px;
+    width: 40px;
+    padding: 5px 10px 5px 10px;
+    overflow-x: visible;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    border-color: #063643;
+}
+
+.btnComentarios:hover {
+    background-color: var(--cor9);
+}
+
+.btnComentarios:active {
+    background-color: var(--cor2);
+}
+
 /*                                          Caixa Contato                                   */
 
 .contato{
@@ -440,8 +468,64 @@ main{
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     border-top: 1px solid rgba(6, 54, 67, 0.4);
-    border-right: 1px solid rgba(6, 54, 67, 0.4);;
-    border-bottom: 1px solid rgba(6, 54, 67, 0.4);;
+    border-right: 1px solid rgba(6, 54, 67, 0.4);
+    border-bottom: 1px solid rgba(6, 54, 67, 0.4);
+}
+
+.caixa{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+form{  
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 40px
+}
+
+.input{
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.4); 
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);   
+}
+
+textarea{
+    height: 100px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.4);    
+}
+
+label{
+    font-weight: 700;
+    font-size: 20px;  
+    color: var(--cor2);
+}
+
+.input:focus , textarea:focus{
+    border: 3px solid var(--cor2);
+    outline: none;
+    transition: 0.1s;
+}
+
+input[type="submit"]{
+    height: 50px;
+    width: 145px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--cor4);
+    color: var(--cor1);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+input[type="submit"]:hover{
+    background-color: var(--cor2);
+    transition: 0.2s;
+    cursor: pointer;
 }
 
 .localizacao{

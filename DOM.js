@@ -26,3 +26,26 @@ linkContato.addEventListener("click", (e) => {
     e.preventDefault();
     window.scrollTo({top: elemento.offsetTop, behavior: "smooth"})
 }) 
+
+let paginaAtual = 1;
+
+        function trocarPagina(acao) {
+            const comentarios = document.querySelectorAll('.comentario');
+            const totalPaginas = 3;
+
+            if (acao === 'prev' && paginaAtual > 1) paginaAtual--;
+            if (acao === 'next' && paginaAtual < totalPaginas) paginaAtual++;
+
+            document.getElementById('paginaAtual').textContent = paginaAtual;
+
+            comentarios.forEach(comentario => {
+                comentario.style.display = comentario.getAttribute('data-pagina') == paginaAtual ? 'block' : 'none';
+            });
+
+            document.getElementById('prev').disabled = paginaAtual === 1;
+            document.getElementById('next').disabled = paginaAtual === totalPaginas;
+
+
+        }
+
+        trocarPagina();

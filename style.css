@@ -27,6 +27,10 @@
     overflow-x: hidden; 
 }
 
+.border{
+    border-style: solid;
+}
+
 body{
     background-color: var(--cor3);
     font-family: var(--fonte1);
@@ -79,10 +83,6 @@ nav {
     background-color: rgba(107, 184, 203, 0.4);
     border-radius: 10px;
     transition: 0.2s;
-}
-
-.border{
-    border-style: solid;
 }
 
 main{
@@ -249,7 +249,7 @@ main{
 }
 /*                                       Caixa do Quem-Somos                                             */
 .container-info{
-    width: 1920px;
+    width: 100%;
 }
 
 .quem-somos{
@@ -259,6 +259,7 @@ main{
     background-image: url(imagens/fundo-quem-somos.png);
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 120px;
 }
 
@@ -335,15 +336,15 @@ main{
     background-color: var(--cor7);
     background-image: url(imagens/fundo-quem-somos.png);
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 64px;
     margin-bottom: 48px;
 }
 
 .servicos2 > p{
-    margin-left: 500px;
-    max-width: 620px;
-    max-height: 120px;
+    width: 620px;
+    height: 120px;
     color: var(--cor2);
     font-family: var(--fonte2);
     font-weight: 400;
@@ -355,15 +356,19 @@ main{
 /*                          Caixa Profissionais                             */
 
 .profissionais{
-    width: 1180px;
-    height: 460px;
+    width: 65%;
+    padding: 20px;
     background-color: var(--cor1);
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     margin-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
 }
 
 .conteiner-profissional{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;

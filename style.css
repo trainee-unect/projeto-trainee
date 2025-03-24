@@ -413,7 +413,9 @@ main{
     gap: 20px;
     color: var(--cor2);
     font-weight: bold;
+    font-size: 18px;
     margin-top: 66px;
+    margin-left: 912px;
 }
 
 .textoComentario  {

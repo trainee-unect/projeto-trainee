@@ -13,6 +13,7 @@
     --cor6: #a3a3a3;
     --cor7: #89c5d5;
     --cor8: #63b3c9;
+
     --cor9: #fafdff;
     --cor10: #c7ebfb;
 
@@ -412,6 +413,39 @@ main{
 
 /*                                          Caixa Avaliaçoes                                */
 
+.paginacao{
+    display: flex;
+    gap: 20px;
+    color: var(--cor2);
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 66px;
+    margin-left: 912px;
+}
+
+.textoComentario  {
+    margin-left: 27px;
+    max-width: 900px ;
+    
+}
+
+hr {
+    box-sizing: border-box;
+    border-color: rgba(0, 0, 0, 0.1);
+    width: 1005px;
+    margin-top: 10px;
+}
+
+#comentarios {
+    margin-top: 43px;
+    min-width: 970px;
+    
+}
+
+.comentario2, .comentario3 {
+    margin-top: 20px;
+}
+
 .avaliacoes{
     width: 1180px;
     height: 626px;
@@ -422,6 +456,21 @@ main{
     display: flex;
     flex-direction: row;
 
+}
+.conteudo-avaliacoes {
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: 615px;
+    margin-left: 65px;
+}
+
+.conteudo-avaliacoes > h1 {
+    color: var(--cor2);
+    margin-top: 50px;
+    
 }
 
 .btnComentarios {

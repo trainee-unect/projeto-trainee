@@ -167,7 +167,7 @@ main{
 }
 
 .carrossel{
-    width: 1180px;
+    width: 85vw;
     height: 330px;
     display: flex;
     flex-direction: column;
@@ -176,39 +176,30 @@ main{
     margin-bottom: 30px;
 }
 
-.banner-carrossel > data-pagina {
-    height: 290px;
-    width: 1094px; 
-    border-radius: 8px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.151);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
 .banner-carrossel[data-pagina="1"] {
-    background-image: url('imagens/banner1.png'); 
+    background-image: url('imagens/carrossel-1.png'); 
+    background-size: cover;
+    background-position: center center;
 }
 
 .banner-carrossel[data-pagina="2"] {
-    background-image: url('imagens/banner2.png'); 
+    background-image: url('imagens/carrossel-3.png'); 
+    background-size: cover;
+    background-position: center center;
 }
 
 .banner-carrossel[data-pagina="3"] {
-    background-image: url('imagens/banner3.png'); 
+    background-image: url('imagens/carrossel-2.png'); 
+    background-size: cover;
+    background-position: center center;
 }
 
-.banner-carrossel {
-    
+.banner-carrossel {   
     height: 290px;
-    width: 1094px; 
-    border-radius: 8px;
+    width: 58vw;
+    border-radius: 10px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.151);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    display: flex;     
 }
 
 .flechas{
@@ -222,6 +213,53 @@ main{
     cursor: pointer;
 }
 
+.centro-carrossel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;   
+    margin-left: 45%;
+}
+
+.centro-carrossel > h1{
+    color: var(--cor2);
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 2%;
+}
+
+.carrossel p{
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 2%;
+    color: var(--cor4);
+}
+
+.centro-carrossel2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 5%;
+    width: 60%;
+}
+
+.centro-carrossel2 > h1{
+    color: var(--cor2);
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 2%;
+}
+
+.carrossel2 p{
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 2%;
+    color: var(--cor4);
+}
+
+.texto-banner2 h1, .texto-banner2 p{
+    color: var(--cor1);
+}
+
 .btCarrossel1{
     width: 283px;
     height: 72px;
@@ -232,8 +270,6 @@ main{
     color: var(--cor2);
     background-color: var(--cor1);
     border-style: none;
-    gap: 10px;
-    margin-top: 51px;
 }
 
 .btCarrossel1:hover{
@@ -246,6 +282,7 @@ main{
 .btCarrossel2{
     width: 283px;
     height: 72px;
+    margin-left: 30px;
     padding: 10px 5px;
     border-radius: 4px;
     font-weight: bolder;
@@ -253,15 +290,12 @@ main{
     color: var(--cor2);
     background-color: var(--cor1);
     border-style: none;
-    gap: 10px;
-    margin-top: 150px;
-    margin-right: 700px;
+    transition: 0.2s;
 }
 
 .btCarrossel2:hover {
     background-color: var(--cor5);
-    color: var(--cor2);
-    transition: 0.2s;
+    color: var(--cor2);   
     cursor: pointer;
 }
 
@@ -269,47 +303,20 @@ main{
     width: 283px;
     height: 72px;
     padding: 10px 5px;
+    margin-left: 30px;
     border-radius: 4px;
     font-weight: bolder;
     font-size: 28px;
     color: var(--cor1);
     background-color: var(--cor2);
     border-style: none;
-    gap: 10px;
-    margin-top: 150px;
-    margin-right: 700px;
+    transition: 0.2s;
 }
 
 .btCarrossel3:hover {
     background-color: var(--cor5);
-    color: var(--cor2);
-    transition: 0.2s;
+    color: var(--cor2);    
     cursor: pointer;
-}
-
-.centro-carrossel{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 12px;
-    margin-left: 150px;
-}
-
-.centro-carrossel > h1{
-    color: var(--cor2);
-    font-weight: 700;
-    font-size: 28px;
-    letter-spacing: 2%;
-    margin-bottom: 12px;
-    margin-left: 20px;
-}
-
-.carrossel p{
-    font-weight: 500;
-    font-size: 20px;
-    letter-spacing: 2%;
-    color: var(--cor4);
 }
 
 .div-debaixo {
@@ -374,7 +381,8 @@ main{
 }
 
 .conteudo-quem-somos{
-    height: 300px;
+    height: 100%;
+    
 }
 
 .conteudo-quem-somos > h2{
@@ -385,16 +393,16 @@ main{
     margin-top: 25px;
 }
 
-.conteudo-quem-somos > p{
+.conteudo-quem-somos > p {
     max-width: 700px;
-    max-height: 300px;
     color: var(--cor2);
     font-family: var(--fonte2);
     font-weight: 400;
     font-size: 20px;
-    line-height: 26px;
+    line-height: 27px;
     letter-spacing: 2%;
 }
+
 
 /*                                    Caixa de Serviços                                             */
 
@@ -428,7 +436,7 @@ main{
     font-family: var(--fonte2);
     font-weight: 400;
     font-size: 20px;
-    line-height: 26px;
+    line-height: 27px;
     letter-spacing: 2%;
 }
 /*                              Caixas Serviços 2                                   */
@@ -452,7 +460,7 @@ main{
     font-family: var(--fonte2);
     font-weight: 400;
     font-size: 20px;
-    line-height: 26px;
+    line-height: 27px;
     letter-spacing: 2%;
 }
 

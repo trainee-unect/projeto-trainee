@@ -41,32 +41,48 @@
 
         <section class="carrossel">
             <div class="flechas">
-                <a href="#"><img src="imagens/flecha-esquerda.png" alt="Flecha Esquerda"></a>
-                <div class="banner-carrossel">
+                <button onclick="trocarPaginaCarrossel('prev')">
+                    <img src="imagens/flecha-esquerda.png" alt="Flecha Esquerda">
+                </button>
+        
+                <!-- Banners do Carrossel -->
+                <div class="banner-carrossel" data-pagina="1">
                     <div class="centro-carrossel">
                         <h1>Campanha de Vacinação</h1>
-                        <div>
-                            <p>Nos dias 19 a 28 de Novembro</p>
-                            <button class="btCarrossel">Saiba Mais</button>
-                        </div>
+                        <p>Nos dias 19 a 28 de Novembro</p>
+                        <button class="btCarrossel1">Saiba Mais</button>
                     </div>
                 </div>
-                <a href="#"><img src="imagens/flecha-direita.png" alt="Flecha Direita"></a>
+        
+                <div class="banner-carrossel" data-pagina="2">
+                    <div class="centro-carrossel">
+                        
+                        <button class="btCarrossel2">Saiba Mais</button>
+                    </div>
+                </div>
+        
+                <div class="banner-carrossel" data-pagina="3">
+                    <div class="centro-carrossel">
+                        
+                        <button class="btCarrossel3">Saiba Mais</button>
+                    </div>
+                </div>
+        
+                <button onclick="trocarPaginaCarrossel('next')">
+                    <img src="imagens/flecha-direita.png" alt="Flecha Direita">
+                </button>
             </div>
+        
+            <!-- Indicadores de Páginas -->
             <div class="div-debaixo">
                 <div class="circulos">
-                    <a href="#">
-                        <div class="circulo"></div>
-                    </a>
-                    <a href="#">
-                        <div class="circulo"></div>
-                    </a>
-                    <a href="#">
-                        <div class="circulo"></div>
-                    </a>
+                    <div onclick="trocarPaginaCarrossel(1)" class="circulo1"></div>
+                    <div onclick="trocarPaginaCarrossel(2)" class="circulo2"></div>
+                    <div onclick="trocarPaginaCarrossel(3)" class="circulo3"></div>
                 </div>
             </div>
         </section>
+        
 
         <section class="container-info">
             <div class="quem-somos" id="quem-somos">

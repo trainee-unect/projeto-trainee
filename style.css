@@ -13,7 +13,6 @@
     --cor6: #a3a3a3;
     --cor7: #89c5d5;
     --cor8: #63b3c9;
-
     --cor9: #fafdff;
     --cor10: #c7ebfb;
     --cor11: #6BB7CB;
@@ -26,7 +25,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden; 
 }
 
 .border{
@@ -45,23 +43,24 @@ header {
     border: 1px solid rgba(0, 0, 0, 0.103);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.151);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: sticky;
+    top: 0;
     z-index: 10;
 }
 
-.logo {
-    margin-left: 390px;
-}
-
-nav {
-    height: 36px;
+.conteiner-nav{
+    width: 65%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 12px;
-    margin-right: 390px;
+}
+
+.navegação{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
 }
 
 .menu {
@@ -72,15 +71,6 @@ nav {
     padding-right: 4px;
 }
 
-.navegação{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 12px;
-    padding: 0px 4px;
-}
-
 .menu:hover {
     color: var(--cor2);
     background-color: rgba(107, 184, 203, 0.4);
@@ -88,7 +78,7 @@ nav {
     transition: 0.2s;
 }
 
-main{
+main{  
     background-color: var(--cor3);
     display: flex;
     flex-direction: column;
@@ -100,7 +90,7 @@ main{
     position: relative;
     background-color: var(--cor1);
     height: 450px;
-    width: 1180px;
+    width: 70%;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
@@ -112,28 +102,31 @@ main{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .titulo-inicio{
+    width: 100%;
     color: var(--cor2);
     font-weight: 700;
     font-size: 28px;
     letter-spacing: 2%;
-    margin: 50px 0px 30px 48px;
+    margin-top: 5%;
+    margin-left: 5%;
+   
 }
 
 .btInicio{
-    width: 283px;
-    height: 72px;
+    width: 290px;
+    height: 75px;
     padding: 5px 10px;
-    margin-bottom: 30px;
     border-radius: 8px;
     border-style: none;
     background-color: var(--cor4);
     font-weight: 700;
     font-size: 28px;
     color: white;
+    cursor: pointer;
 }
 
 .btInicio:hover{
@@ -142,13 +135,17 @@ main{
     transition: 0.2s;
 }
 
+.animais-inicio img{
+    width: 100%;
+}
+
 .imagem-inicio {
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 30px;
-    right: 30px;
+    top: 40px;
+    right: 40px;
     width: 200px;
     height: 200px;
     transform: rotate(45deg);
@@ -159,15 +156,7 @@ main{
     transform: rotate(45deg);
 }
 
-.animais-contato{
-    width: 717px;
-    height: 260px;
-    display: flex;
-    align-content: center;
-}
-
 .carrossel{
-    width: 85vw;
     height: 330px;
     display: flex;
     flex-direction: column;
@@ -196,7 +185,7 @@ main{
 
 .banner-carrossel {   
     height: 290px;
-    width: 58vw;
+    width: 65vw;
     border-radius: 10px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.151);
     display: flex;     
@@ -350,39 +339,26 @@ main{
     cursor: pointer;
 }
 
-.circulo3 {
-    width: 20px; 
-    height: 20px; 
-    background-color: var(--cor6); 
-    border-radius: 50%; 
-    cursor: pointer;
-}
-
 /*                                       Caixa do Quem-Somos                                             */
 .container-info{
     width: 100%;
-}
-
-.quem-somos{
-    width: 100%;
-    height: 300px;
     background-color: var(--cor7);
     background-image: url(imagens/fundo-quem-somos.png);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 120px;
+    margin-bottom: 50px;
 }
 
-
-.quem-somos > img{
-    width: 300px;
-    height: 300px;
+.quem-somos{
+    width: 65%;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .conteudo-quem-somos{
-    height: 100%;
-    
+    width: 60%;
 }
 
 .conteudo-quem-somos > h2{
@@ -390,11 +366,9 @@ main{
     font-weight: bold;
     font-size: 24px;
     margin-bottom: 35px;
-    margin-top: 25px;
 }
 
 .conteudo-quem-somos > p {
-    max-width: 700px;
     color: var(--cor2);
     font-family: var(--fonte2);
     font-weight: 400;
@@ -403,22 +377,20 @@ main{
     letter-spacing: 2%;
 }
 
-
 /*                                    Caixa de Serviços                                             */
-
-.servicos1{
+.container-servicos1{
     width: 100%;
-    height: 420px;
-    background-color: var(--cor8);
-    background-image: url(imagens/fundo-quem-somos.png);
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 92px;
+    background-color: var(--cor8);
+    background-image: url(imagens/fundo-quem-somos.png); 
 }
 
-.conteudo-servicos{
-    height: 420px;
+.servicos1{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .conteudo-servicos > h2{
@@ -430,8 +402,7 @@ main{
 }
 
 .texto-servicos1{
-    width: 620px;
-    height: 150px;
+    width: 55%;
     color: var(--cor2);
     font-family: var(--fonte2);
     font-weight: 400;
@@ -447,15 +418,16 @@ main{
     background-color: var(--cor7);
     background-image: url(imagens/fundo-quem-somos.png);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 64px;
-    margin-bottom: 48px;
+}
+
+.container-servicos2{
+    width: 65%;
 }
 
 .servicos2 > p{
-    width: 620px;
-    height: 120px;
+    width: 55%;
     color: var(--cor2);
     font-family: var(--fonte2);
     font-weight: 400;
@@ -479,15 +451,14 @@ main{
 }
 
 .conteiner-profissional{
-    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
     justify-content: space-evenly;
 }
 
 .profissionais > h2{
-    margin-top: 40px;
-    margin-left: 40px;
+    margin-top: 5%;
+    margin-left: 5%;
     font-weight: 700;
     font-size: 24px;
     color: var(--cor2);
@@ -495,13 +466,13 @@ main{
 
 .conteudo-profissionais{
     height: 296px;
-    width: 240px;
-    margin-top: 40px;  
+    margin-top: 5%; 
+    flex: 0 1 230px; 
 }
 
 .conteudo-profissionais > img{
     height: 230px;
-    width: 230px;
+    width: 100%;
 }
 
 .conteudo-profissionais > h3{
@@ -523,74 +494,62 @@ main{
 
 /*                                          Caixa Avaliaçoes                                */
 
+.avaliacoes {   
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 60%;
+    margin-bottom: 40px;
+}
+
+.conteudo-avaliacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.conteudo-avaliacoes > h1 {
+    color: var(--cor2);
+    margin-top: 5%;   
+}
+
 .paginacao{
     display: flex;
+    justify-content: flex-end;
     gap: 20px;
     color: var(--cor2);
     font-weight: bold;
     font-size: 18px;
-    margin-top: 66px;
-    margin-left: 912px;
 }
 
 .textoComentario  {
-    margin-left: 27px;
-    max-width: 900px ;
-    
+    margin-left: 20px;  
 }
 
 hr {
     box-sizing: border-box;
     border-color: rgba(0, 0, 0, 0.1);
-    width: 1005px;
-    margin-top: 10px;
 }
 
 #comentarios {
-    margin-top: 43px;
-    min-width: 970px;
-    
+    margin-top: 40px;    
 }
 
 .comentario2, .comentario3 {
-    margin-top: 20px;
-}
-
-.avaliacoes{
-    width: 1180px;
-    height: 626px;
-    margin-bottom: 37px;
+    margin-top: 25px;
 }
 
 .comentario1, .comentario2, .comentario3 {
     display: flex;
     flex-direction: row;
-
-}
-.conteudo-avaliacoes {
-    
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: inherit;
-    height: 615px;
-    margin-left: 65px;
 }
 
-.conteudo-avaliacoes > h1 {
-    color: var(--cor2);
-    margin-top: 50px;
-    
-}
-
-.btnComentarios {
-    
+.btnComentarios {  
     background-color: var(--cor3);
     border-radius: 8px;
     height: 30px;
     width: 40px;
     padding: 5px 10px 5px 10px;
-    overflow-x: visible;
     display: flex;
     align-items: center;
     justify-self: center;
@@ -609,7 +568,7 @@ hr {
 
 .contato{
     height: 745px;
-    width: 1020px;
+    width: 60%;
     margin-bottom: 48px;
 }
 
@@ -626,7 +585,7 @@ hr {
 }
 
 .formulario{
-    width: 600px;
+    width: 60%;
     height: 692px;
     background-color: var(--cor9);
     border-top-right-radius: 8px;
@@ -693,7 +652,7 @@ input[type="submit"]:hover{
 }
 
 .localizacao{
-    width: 420px;
+    width: 40%;
     height: 692px;
     background-color: var(--cor1);
     border-top-left-radius: 8px;
@@ -709,7 +668,7 @@ input[type="submit"]:hover{
 }
 
 .info-form{
-    margin-left: 20px;
+    margin-left: 5%;
     font-style: italic;
     font-weight: 400;
     font-size: 20px;
@@ -720,7 +679,7 @@ input[type="submit"]:hover{
 .mapa{
     display: flex;
     align-items: center;
-    margin: 70px 0px 40px 35px;
+    margin: 70px 10% 40px 10%;
     
 }
 
@@ -746,14 +705,27 @@ span{
 
 /*                                  Footer                          */
 
-.rodape{
-    height: 232px;
+footer{
+    width: 100%;
     background-color: var(--cor1);
     border-top: 1px solid var(--cor10);
     border-bottom: 1px solid var(--cor10);
     text-transform: uppercase;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape{
+    width: 75%;
+    text-transform: uppercase;
+    display: flex;
     justify-content: center;
+    align-items: center; 
+}
+
+.conteudo-footer{
+    display: flex;
     gap: 100px;
 }
 
@@ -787,6 +759,7 @@ span{
 }
 
 .fim{
+    width: 100%;
     background-color: var(--cor2);
     text-align: center;
     text-transform: uppercase;

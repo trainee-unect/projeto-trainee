@@ -6,23 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="media.css">
     <title>Pindorama Pets</title>
 </head>
 
 <body>
-
     <header>
-        <div class="logo">
-            <a href="#"><img src="imagens/logo-header.png" id="logo" alt="Logo da Pindorama Pets"></a>
-        </div>
-        <nav>
-            <ul class="navegação">
-                <li><a href="#" class="menu" id="navInicio">Inicio</a></li>
-                <li><a href="#" class="menu" id="navServicos">Serviços</a></li>
-                <li><a href="#" class="menu" id="navSobre">Sobre nós</a></li>
-                <li><a href="#" class="menu" id="navContato">Contato</a></li>
-            </ul>
-        </nav>
+            <div class="conteiner-nav">
+                <div class="logo-nav">
+                    <a href="#"><img src="imagens/logo-header.png" id="logo" alt="Logo da Pindorama Pets"></a>
+                </div>
+                <nav>
+                    <ul class="navegação">
+                        <li><a href="#" class="menu" id="navInicio">Inicio</a></li>
+                        <li><a href="#" class="menu" id="navServicos">Serviços</a></li>
+                        <li><a href="#" class="menu" id="navSobre">Sobre nós</a></li>
+                        <li><a href="#" class="menu" id="navContato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>    
     </header>
 
     <main>
@@ -31,7 +33,7 @@
                 <div class="imagem-inicio ">
                     <img id="imagem-animal" src="imagens/icone-contato.png" alt="Icone">
                 </div>
-            <div class="caixa-inicio ">
+            <div class="caixa-inicio">
                 <button class="btInicio">Entre em Contato</button>
                 <div class="animais-inicio">
                     <img src="imagens/animais-contato.png" alt="Animais">
@@ -80,7 +82,7 @@
                 <div class="circulos">
                     <div onclick="trocarPaginaCarrossel(1)" class="circulo1"></div>
                     <div onclick="trocarPaginaCarrossel(2)" class="circulo2"></div>
-                    <div onclick="trocarPaginaCarrossel(3)" class="circulo3"></div>
+                    <div onclick="trocarPaginaCarrossel(3)" class="circulo2"></div>
                 </div>
             </div>
         </section>
@@ -91,27 +93,27 @@
                 <img src="imagens/logo-quem-somos.png" alt="Logo Quem-Somos">
                 <div class="conteudo-quem-somos">
                     <h2>Quem Somos?</h2>
-                    <p>Nossa clínica veterinária é comprometida com o cuidado e bem-estar de cada pet, com uma equipe
-                        dedicada e instalações modernas, buscamos garantir saúde e conforto em cada atendimento.
-                        Cuidamos do seu animalzinho como se fosse nosso!</p>
+                    <p>Nossa clínica veterinária é comprometida com o cuidado e bem-estar de cada pet, com uma equipe dedicada e instalações modernas, buscamos garantir saúde e conforto em cada atendimento. Cuidamos do seu animalzinho como se fosse nosso!</p>
                 </div>
             </div>
 
-            <div class="servicos1" id="servicos1">
-                <div class="conteudo-servicos">
-                    <h2>Nossos serviços</h2>
-                    <img src="imagens/foto-servicos1.png" alt="Foto Vetrinária">
-                </div>
-                <div class="texto-servicos1">
-                    <p>Na nossa clínica veterinária, cada consulta é realizada com dedicação e atenção aos detalhes,
-                        garantindo o melhor cuidado para o seu pet. Contamos com uma equipe experiente e atualizada para
-                        oferecer diagnósticos precisos e tratamentos eficazes. </p>
+            <div class="container-servicos1">
+                <div class="servicos1" id="servicos1">
+                    <div class="conteudo-servicos">
+                        <h2>Nossos serviços</h2>
+                        <img src="imagens/foto-servicos1.png" alt="Foto Vetrinária">
+                    </div>
+                    <div class="texto-servicos1">
+                        <p>Na nossa clínica veterinária, cada consulta é realizada com dedicação e atenção aos detalhes, garantindo o melhor cuidado para o seu pet. Contamos com uma equipe experiente e atualizada para oferecer diagnósticos precisos e tratamentos eficazes. </p>
+                    </div>
                 </div>
             </div>
 
-            <div class="servicos2">
-                <p>Nós cuidamos do seu pet com o carinho e respeito que ele merece. Nossa equipe dedica atenção a cada detalhe, proporcionando um ambiente acolhedor e seguro para que seu animalzinho se sinta em casa.</p>
-                <img src="imagens/foto-servicos2.png" alt="Vetrinária e Golden Retriver">
+            <div class="container-servicos2">
+                <div class="servicos2">
+                    <p>Nós cuidamos do seu pet com o carinho e respeito que ele merece. Nossa equipe dedica atenção a cada detalhe, proporcionando um ambiente acolhedor e seguro para que seu animalzinho se sinta em casa.</p>
+                    <img src="imagens/foto-servicos2.png" alt="Vetrinária e Golden Retriver">
+                </div>
             </div>
         </section>
 
@@ -142,7 +144,6 @@
         </section>
 
         <section class="avaliacoes">
-
             <div class="conteudo-avaliacoes">
                 <h1>Avaliações (34)</h1>
                 <div id="comentarios">
@@ -247,19 +248,20 @@
                 </div>
 
                 <!-- Paginação -->
-                <div class="paginacao">
-                    <button class="btnComentarios" id="prev" onclick="trocarPagina('prev')"><img
-                            src="imagens/setaPrev.png" alt=""></button>
-                    <span id="paginaAtual">1</span>
-                    <button class="btnComentarios" id="next" onclick="trocarPagina('next')"><img
-                            src="imagens/setaNext.png" alt=""></button>
-                </div>
+                
+            </div>
+            <div class="paginacao">
+                <button class="btnComentarios" id="prev" onclick="trocarPagina('prev')"><img
+                        src="imagens/setaPrev.png" alt=""></button>
+                <span id="paginaAtual">1</span>
+                <button class="btnComentarios" id="next" onclick="trocarPagina('next')"><img
+                        src="imagens/setaNext.png" alt=""></button>
             </div>
         </section>
 
         <section class="contato" id="contato">
             <h2>Entre em Contato</h2>
-            <div class="container-contato ">
+            <div class="container-contato">
                 <div class="localizacao">
                     <h3>Localização</h3>
 
@@ -310,38 +312,36 @@
     </main>
 
     <footer>
-
         <section class="rodape">
-            <div>
-                <a href="#"><img id="imagem-blocos" src="imagens/logo-quem-somos.png" alt="Logo Pindorama Pets" ></a>
-            </div>
-            <div class="blocos">
-                <h3>Nossos serviços</h3>
-                <p>Sobre nós</p>
-                <p>Consulta veterinária </p>
-                <p>Nossos serviços</p>
-            </div>
-            <div class="blocos">
-                <h3>Institucional</h3>
-                <p>Programa de adoção</p>
-                <p>Termos de Compromisso</p>
-                <p>Unect jR</p>
-            </div>
-            <div class="blocos" id="icones">
-                <h3>Nossos contatos</h3>
-                <img src="imagens/icon-whatsapp.png" alt="Icone WhatsApp">
-                <img src="imagens/icon-instagram.png" alt="Icone Instagram">
-                <img src="imagens/icon-face.png" alt="Icone Facebook">
+            <div class="conteudo-footer">
+                <div>
+                    <a href="#"><img id="imagem-blocos" src="imagens/logo-quem-somos.png" alt="Logo Pindorama Pets" ></a>
+                </div>
+                <div class="blocos border">
+                    <h3>Nossos serviços</h3>
+                    <p>Sobre nós</p>
+                    <p>Consulta veterinária </p>
+                    <p>Nossos serviços</p>
+                </div>
+                <div class="blocos border">
+                    <h3>Institucional</h3>
+                    <p>Programa de adoção</p>
+                    <p>Termos de Compromisso</p>
+                    <p>Unect jR</p>
+                </div>
+                <div class="blocos border" id="icones">
+                    <h3>Nossos contatos</h3>
+                    <img src="imagens/icon-whatsapp.png" alt="Icone WhatsApp">
+                    <img src="imagens/icon-instagram.png" alt="Icone Instagram">
+                    <img src="imagens/icon-face.png" alt="Icone Facebook">
+                </div>
             </div>
         </section>
-
         <section class="fim">
             <p>Unect JR - Todos os direitos reservados</p>
         </section>
-
     </footer>
 
     <script src="DOM.js"></script>
 </body>
-
 </html>

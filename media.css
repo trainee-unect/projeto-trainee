@@ -1,3 +1,164 @@
+@media screen and (max-width: 1450px){
+
+   header{
+        height: 100px;
+   } 
+
+   .logo-nav img{
+        width: 80%;
+   }
+
+   .conteiner-nav{
+        width: 75%;
+   }
+
+   .navegação{
+        gap: 15px;
+   }
+
+   .menu {  
+        font-size: 20px;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    .inicio {
+        height: 380px;
+        width: 80%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .titulo-inicio{
+        font-size: 24px;
+        letter-spacing: 2%;
+        margin-top: 5%;
+        margin-left: 5%;  
+    }
+
+    .btInicio{
+        margin-left: 5px;
+        width: 260px;
+        height: 75px;
+        padding: 7px 5px;
+        font-weight: bold;
+        font-size: 23px;
+    }
+
+    .animais-inicio img{
+        width: 550px;
+    }
+
+    .imagem-inicio {
+        display: none;
+    }
+
+    .carrossel{
+        height: 330px;
+        margin-bottom: 30px;
+    }
+
+    .banner-carrossel {   
+        height: 250px;
+        width: 75vw;    
+    }
+
+    .centro-carrossel > h1{
+        font-size: 22px;
+    }
+
+    .carrossel p{
+        font-size: 18px;
+    }
+
+    .centro-carrossel2{
+        margin-left: 3%;
+        width: 65%;
+    }
+
+    .centro-carrossel2 > h1{
+        font-size: 22px;
+        
+    }
+    
+    .carrossel2 p{
+        font-size: 18px;
+    }
+
+    .btCarrossel1{
+        width: 260px;
+        height: 65px;
+        font-size: 26px;       
+    }
+
+    .btCarrossel2{
+        width: 260px;
+        height: 65px;
+        margin-left: 25px;
+        font-size: 26px;
+    }
+
+    .btCarrossel3{
+        width: 260px;
+        height: 65px;
+        margin-left: 25px;
+        font-size: 26px;
+    }
+
+    .div-debaixo {
+        height: 15px;   
+    }
+
+    .container-info{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .quem-somos{
+        width: 75%;   
+    }
+
+    .conteudo-quem-somos > h2{       
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+
+    .conteudo-quem-somos > p {
+        font-size: 18px;
+    }
+
+    .quem-somos img{
+        width: 250px;
+    }
+
+    .servicos1{
+        width: 80%;
+    }
+
+    .conteudo-servicos > h2{
+        font-size: 22px;    
+        margin-top: 25px;
+    }
+
+    .texto-servicos1{
+        width: 55%;
+        font-size: 18px;
+    }
+
+    .container-servicos2{
+        width: 80%;
+    }
+
+    .servicos2 > img {
+        width: 250px;
+    }
+
+    .servicos2 > p{
+        width: 55%;
+        font-size: 18px;
+    }
+}
+
 @media screen and (max-width: 700px){
     
     .inicio{

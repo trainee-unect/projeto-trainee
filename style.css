@@ -112,8 +112,7 @@ main{
     font-size: 28px;
     letter-spacing: 2%;
     margin-top: 5%;
-    margin-left: 5%;
-   
+    margin-left: 5%;  
 }
 
 .btInicio{
@@ -133,10 +132,6 @@ main{
     background-color: var(--cor5);
     color: var(--cor2);
     transition: 0.2s;
-}
-
-.animais-inicio img{
-    width: 100%;
 }
 
 .imagem-inicio {
@@ -206,7 +201,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;   
-    margin-left: 45%;
+    margin-left: 40%;
 }
 
 .centro-carrossel > h1{
@@ -399,6 +394,10 @@ main{
     font-size: 24px;
     margin-bottom: 25px;
     margin-top: 35px;
+}
+
+.conteudo-servicos > img{
+    width: 250px;
 }
 
 .texto-servicos1{

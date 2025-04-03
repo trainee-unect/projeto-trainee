@@ -1,466 +1,609 @@
 @media screen and (max-width: 1450px){ /* Tela Notebook*/
 
-   header{
-        height: 100px;
-   } 
-
-   .logo-nav img{
-        width: 80%;
-   }
-
-   .conteiner-nav{
-        width: 75%;
-   }
-
-   .navegação{
-        gap: 15px;
-   }
-
-   .menu {  
-        font-size: 20px;
-        padding-left: 6px;
-        padding-right: 6px;
-    }
-
-    .inicio {
-        height: 380px;
-        width: 80%;
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
-
-    .titulo-inicio{
-        font-size: 24px;
-        letter-spacing: 2%;
-        margin-top: 5%;
-        margin-left: 5%;  
-    }
-
-    .btInicio{
-        margin-left: 5px;
-        width: 260px;
-        height: 75px;
-        padding: 7px 5px;
-        font-weight: bold;
-        font-size: 23px;
-    }
-
-    .animais-inicio img{
-        width: 550px;
-    }
-
-    .imagem-inicio {
-        display: none;
-    }
-
-    .carrossel{
-        height: 330px;
-        margin-bottom: 30px;
-    }
-
-    .banner-carrossel {   
-        height: 250px;
-        width: 75vw;    
-    }
-
-    .centro-carrossel > h1{
-        font-size: 22px;
-    }
-
-    .carrossel p{
-        font-size: 18px;
-    }
-
-    .centro-carrossel2{
-        margin-left: 3%;
-        width: 65%;
-    }
-
-    .centro-carrossel2 > h1{
-        font-size: 22px;
-        
-    }
-    
-    .carrossel2 p{
-        font-size: 18px;
-    }
-
-    .btCarrossel1{
-        width: 260px;
-        height: 65px;
-        font-size: 26px;       
-    }
-
-    .btCarrossel2{
-        width: 260px;
-        height: 65px;
-        margin-left: 25px;
-        font-size: 26px;
-    }
-
-    .btCarrossel3{
-        width: 260px;
-        height: 65px;
-        margin-left: 25px;
-        font-size: 26px;
-    }
-
-    .div-debaixo {
-        height: 15px;   
-    }
-
-    .container-info{
-        width: 100%;
-        margin-bottom: 50px;
-    }
-
-    .quem-somos{
-        width: 75%;   
-    }
-
-    .conteudo-quem-somos > h2{       
-        font-size: 22px;
-        margin-bottom: 25px;
-    }
-
-    .conteudo-quem-somos > p {
-        font-size: 18px;
-    }
-
-    .quem-somos img{
-        width: 250px;
-    }
-
-    .servicos1{
-        width: 80%;
-    }
-
-    .conteudo-servicos > h2{
-        font-size: 22px;    
-        margin-top: 25px;
-    }
-
-    .conteudo-servicos > img{
-        width: 250px;
-    }
-
-    .texto-servicos1{
-        width: 55%;
-        font-size: 18px;
-    }
-
-    .container-servicos2{
-        width: 80%;
-    }
-
-    .servicos2 > img {
-        width: 250px;
-    }
-
-    .servicos2 > p{
-        width: 55%;
-        font-size: 18px;
-    }
-
-    .profissionais{
-        width: 75%;
-        padding: 10px;
-        margin-bottom: 48px;        
-    }
-
-    .profissionais > h2{
-        font-size: 22px;
-    }
-
-    .conteudo-profissionais{
-        height: 296px;
-        margin-top: 5%; 
-        flex: 0 1 190px; 
-    }
-
-    .conteudo-profissionais > img{
-        height: 190px;
-    }
-
-    .conteudo-profissionais > h3{
-        font-size: 16px;
-    }
-
-    .conteudo-profissionais > p{
-        font-size: 14px;
-    }
-
-    .avaliacoes {   
-        width: 70%;
-        margin-bottom: 40px;
-    }
-
-    .textoComentario {
-        font-size: 16px;  
-    }
-
-    .contato{
-        width: 70%;
-        margin-bottom: 48px;
-    }
-
-    .contato > h2{
-        font-size: 22px;
-    }
-
-    .formulario{
-        width: 70%;
-    }
-
-    label{
-        font-size: 18px;  
-    }
-
-    input[type="submit"]{
-        width: 150px;
-        font-size: 18px;
-    }
-
-    .localizacao{
-        width: 50%;
-    }
-
-    .localizacao h3{
-        font-size: 18px;
-    }
-
-    .info-form{
-        margin-left: 5%;
-        font-size: 18px;
-    }
-
-    .mapa{
-        margin: 70px 10% 40px 5%;  
-    }
-    
-    .mapa iframe{
-        height: 230px;
-        width: 320px;
-    }
-
-    span{
-        gap: 10px;
-    }
-
-    .icones-form{
-        gap: 6px;
-        margin-left: 5%;
-    }
-
-    .rodape{
-        width: 90%;
-    }
-
-    .conteudo-footer{
-        gap: 62px;
-    }
-
-    #imagem-blocos{
-        height: 175px;
-        width: 175px;
-    }
-
-    .blocos > h3{
-        font-size: 14px;        
-    }
-
-    .blocos > p{
-        font-size: 14px;
-    }
-
-    .blocos > img{
-        padding-right: 9px;
-    }
-}
-
-@media screen and (max-width: 950px) {
-
     header{
-        height: 100px;   
+         height: 100px;
+    } 
+ 
+    .logo-nav img{
+         width: 80%;
     }
-
+ 
     .conteiner-nav{
-        width: 90%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    nav{
-        display: block;
-        margin: auto;
+         width: 75%;
     }
  
     .navegação{
-        display: none;
+         gap: 15px;
     }
-
-    .logo-header{
-        display: none;
-    }
-
-    .logo-mobile{
-        display: block;
-        width: 120px;
-        height: 60px;   
-    }
-
-    .menu-mobile{
-        display: block;
-        width: 50px;
-        height: 50px;
-    }
-
-    .inicio{
-        display: none;
-    }
-
-    .carrossel {
-        display: none;
-    }
+ 
+    .menu {  
+         font-size: 20px;
+         padding-left: 6px;
+         padding-right: 6px;
+     }
+ 
+     .inicio {
+         height: 380px;
+         width: 80%;
+         margin-top: 20px;
+         margin-bottom: 30px;
+     }
+ 
+     .titulo-inicio{
+         font-size: 24px;
+         letter-spacing: 2%;
+         margin-top: 5%;
+         margin-left: 5%;  
+     }
+ 
+     .btInicio{
+         margin-left: 5px;
+         width: 260px;
+         height: 75px;
+         padding: 7px 5px;
+         font-weight: bold;
+         font-size: 23px;
+     }
+ 
+     .animais-inicio img{
+         width: 550px;
+     }
+ 
+     .imagem-inicio {
+         display: none;
+     }
+ 
+     .carrossel{
+         height: 330px;
+         margin-bottom: 30px;
+     }
+ 
+     .banner-carrossel {   
+         height: 250px;
+         width: 75vw;    
+     }
+ 
+     .centro-carrossel > h1{
+         font-size: 22px;
+     }
+ 
+     .carrossel p{
+         font-size: 18px;
+     }
+ 
+     .centro-carrossel2{
+         margin-left: 3%;
+         width: 65%;
+     }
+ 
+     .centro-carrossel2 > h1{
+         font-size: 22px;
+         
+     }
+     
+     .carrossel2 p{
+         font-size: 18px;
+     }
+ 
+     .btCarrossel1{
+         width: 260px;
+         height: 65px;
+         font-size: 26px;       
+     }
+ 
+     .btCarrossel2{
+         width: 260px;
+         height: 65px;
+         margin-left: 25px;
+         font-size: 26px;
+     }
+ 
+     .btCarrossel3{
+         width: 260px;
+         height: 65px;
+         margin-left: 25px;
+         font-size: 26px;
+     }
+ 
+     .div-debaixo {
+         height: 15px;   
+     }
+ 
+     .container-info{
+         width: 100%;
+         margin-bottom: 50px;
+     }
+ 
+     .quem-somos{
+         width: 75%;   
+     }
+ 
+     .conteudo-quem-somos > h2{       
+         font-size: 22px;
+         margin-bottom: 25px;
+     }
+ 
+     .conteudo-quem-somos > p {
+         font-size: 18px;
+     }
+ 
+     .quem-somos img{
+         width: 250px;
+     }
+ 
+     .servicos1{
+         width: 80%;
+     }
+ 
+     .conteudo-servicos > h2{
+         font-size: 22px;    
+         margin-top: 25px;
+     }
+ 
+     .conteudo-servicos > img{
+         width: 250px;
+     }
+ 
+     .texto-servicos1{
+         width: 55%;
+         font-size: 18px;
+     }
+ 
+     .container-servicos2{
+         width: 80%;
+     }
+ 
+     .servicos2 > img {
+         width: 250px;
+     }
+ 
+     .servicos2 > p{
+         width: 55%;
+         font-size: 18px;
+     }
+ 
+     .profissionais{
+         width: 75%;
+         padding: 10px;
+         margin-bottom: 48px;        
+     }
+ 
+     .profissionais > h2{
+         font-size: 22px;
+     }
+ 
+     .conteudo-profissionais{
+         height: 296px;
+         margin-top: 5%; 
+         flex: 0 1 190px; 
+     }
+ 
+     .conteudo-profissionais > img{
+         height: 190px;
+     }
+ 
+     .conteudo-profissionais > h3{
+         font-size: 16px;
+     }
+ 
+     .conteudo-profissionais > p{
+         font-size: 14px;
+     }
+ 
+     .avaliacoes {   
+         width: 70%;
+         margin-bottom: 40px;
+     }
+ 
+     .textoComentario {
+         font-size: 16px;  
+     }
+ 
+     .contato{
+         width: 70%;
+         margin-bottom: 48px;
+     }
+ 
+     .contato > h2{
+         font-size: 22px;
+     }
+ 
+     .formulario{
+         width: 70%;
+     }
+ 
+     label{
+         font-size: 18px;  
+     }
+ 
+     input[type="submit"]{
+         width: 150px;
+         font-size: 18px;
+     }
+ 
+     .localizacao{
+         width: 50%;
+     }
+ 
+     .localizacao h3{
+         font-size: 18px;
+     }
+ 
+     .info-form{
+         margin-left: 5%;
+         font-size: 18px;
+     }
+ 
+     .mapa{
+         margin: 70px 10% 40px 5%;  
+     }
+     
+     .mapa iframe{
+         height: 230px;
+         width: 320px;
+     }
+ 
+     span{
+         gap: 10px;
+     }
+ 
+     .icones-form{
+         gap: 6px;
+         margin-left: 5%;
+     }
+ 
+     .rodape{
+         width: 90%;
+     }
+ 
+     .conteudo-footer{
+         gap: 62px;
+     }
+ 
+     #imagem-blocos{
+         height: 175px;
+         width: 175px;
+     }
+ 
+     .blocos > h3{
+         font-size: 14px;        
+     }
+ 
+     .blocos > p{
+         font-size: 14px;
+     }
+ 
+     .blocos > img{
+         padding-right: 9px;
+     }
+ }
+ 
+ @media screen and (max-width: 950px) {
+ 
+     header{
+         height: 110px;   
+     }
+ 
+     .conteiner-nav{
+         width: 95%;
+         display: flex;
+         justify-content: space-between;
+     }
+ 
+     nav{
+         display: block;
+         margin: auto;
+     }
+ 
+     .logo-mobile{
+         display: flex;
+         align-items: center;
+         width: 100%;
+         justify-content: center;
+         margin-right: 5%;
+     }
+ 
+     .logo-mobile img{
+         width: 105px;
+         height: 50px;
+         margin-right: 40px;
+     }
+ 
+     .menu-mobile{
+         display: block;
+         width: 40px;
+         height: 40px;
+     }
+     
+     .navegação{
+         display: none;
+     }
+ 
+     .logo-header{
+         display: none;
+     }
+ 
+     .inicio {
+         display: flex;
+         flex-direction: column;
+         background-color: transparent;
+         border: none;
+         box-shadow: none;
+         width: 100%;
+         margin-top: 20px;
+         margin-bottom: 30px;
+     }
+ 
+     .caixa-inicio{
+         position: relative;
+         display: flex;
+         flex-direction: column-reverse;
+         justify-content: center;
+         align-items: center;
+         gap: 10px;
+         margin-top: 10%;
+     }
+     
+     
+     .titulo-inicio{
+         position: absolute;
+         display: block;
+         width: 50%;
+         font-size: 20px;  
+         z-index: 1;
+         margin-left: 10%;
+     }
+ 
+     .animais-inicio img{
+         width: 500px;
+     }
+ 
+     .btInicio{
+         width: 260px;
+         height: 60px;
+         font-size: 22px;
+     }
+ 
+     .carrossel {
+         display: none;
+     }
+ 
+     .quem-somos{
+         display: flex;
+         justify-content: center;
+         width: 100%;
+     }
+ 
+     #logo-quem-somos{
+         display: none;
+     }
+ 
+     .conteudo-quem-somos{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         width: 80%;
+     }
+ 
+     .conteudo-quem-somos > h2{
+         font-size: 28px;
+         text-align: center;
+         margin-top: 30px;
+     }
+ 
+     
+     #logo-quem-somos-mobile{
+         display: block;
+         width: 180px;
+         margin-bottom: 35px;
+     }
+ 
+     .conteudo-quem-somos > p {
+         font-size: 17px;
+         line-height: 25px;
+         text-align: center;
+         margin-bottom: 20px;
+     }
+ 
+     .conteudo-quem-somos::after{
+         content: "Cuidamos do seu animalzinho com amor!" ;    
+         color: #063643;
+         font-family: var(--fonte2) ;
+         font-size: 20px;
+         font-weight: 700;
+         line-height: 20px;
+         letter-spacing: 2%;
+         text-align: center;
+         margin-bottom: 25px;
+     }
+ 
+     .container-servicos1{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         
+     }
+ 
+     .servicos1{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }   
+ 
+     .conteudo-servicos > h2{
+         font-size: 28px;
+         text-align: center;
+         margin-top: 30px;
+     }
+ 
+     .texto-servicos1{
+         width: 100%;
+         font-size: 17px;
+         line-height: 25px;
+         text-align: center;
+     }
+ 
+     #gato-mobile{
+         display: flex;
+     }
+ 
+     .btn-mobile{
+         display: flex;
+         width: 220px;
+         height: 45px;
+     }
+ 
+     #foto-veterinaria{
+         display: none;
+     }
+ 
+     .servicos2{
+         display: none;
+     }
+ 
+  
+ 
+ 
+ 
+   
+     /*
+     .quem-somos {
+         display: block;
+         width: 100%;
+         height: 356px;
+         background-color: var(--cor7);
+         background-image: url(imagens/fundo-quem-somos.png);
+         display: none;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         gap: 0;
+     }
+ 
+     .quem-somos-mobile {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         background-color: var(--cor7);
+         background-image: url(imagens/fundo-quem-somos.png);
+         text-align: center;
+         color: var(--cor2);
+         font-size: 14px;
+         height: 356px;
+         gap: 40px;
+     }
+ 
+     .text>p {
+         padding: 10px;
+     }
+ 
+     .text>h4 {
+         padding: 10px;
+         font-size: 16px;
+     }
+ 
+     .imgMobile {
+         width: 167px;
+         height: 102.56724548339844;
+     }
+ 
+     .titulo-img {
+         display: flex;
+         flex-direction: column-reverse;
+     }
+ 
     
-
+     .servicos1 {
+         width: 100%;
+         height: 420px;
+         background-color: var(--cor8);
+         background-image: url(imagens/fundo-quem-somos.png);
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 92px;
+         display: none;
+     }
+ 
+     .servicos1-mobile {
+         text-align: center;
+         color: #063643;
+         width: 100%;
+         height: 330px;
+         background-color: var(--cor8);
+         background-image: url(imagens/fundo-quem-somos.png);
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: flex-start;
+     }
+ 
+     .text-servicos1 {
+         margin-top: 30px;
+         gap: 40px;
+         display: flex;
+         flex-direction: column;
+     }
+ 
+     .text-servicos1>p {
+         font-size: 14px;
+         padding: 10px;
+     }
+ 
+     .servicos1-mobile>button {
+         width: 207px;
+         height: 38px;
+         border-radius: 2.19px;
+         font-weight: bolder;
+         font-size: 15.34px;
+         color: var(--cor2);
+         background-color: var(--cor1);
+         border-style: none;
+         transition: 0.2s;
+     }
+ 
+     .servicos1-mobile>button:hover {
+         background-color: var(--cor2);
+         color: var(--cor1);
+         cursor: pointer;
+     }
+ 
+     
+     .servicos2 {
+         display: none;
+     }
+ 
     
-    /* QUEM SOMOS */
-    .quem-somos {
-        width: 100%;
-        height: 356px;
-        background-color: var(--cor7);
-        background-image: url(imagens/fundo-quem-somos.png);
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 0;
-    }
-
-    .quem-somos-mobile {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--cor7);
-        background-image: url(imagens/fundo-quem-somos.png);
-        text-align: center;
-        color: var(--cor2);
-        font-size: 14px;
-        height: 356px;
-        gap: 40px;
-    }
-
-    .text>p {
-        padding: 10px;
-    }
-
-    .text>h4 {
-        padding: 10px;
-        font-size: 16px;
-    }
-
-    .imgMobile {
-        width: 167px;
-        height: 102.56724548339844;
-    }
-
-    .titulo-img {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    /* SERVIÇOS */
-    .servicos1 {
-        width: 100%;
-        height: 420px;
-        background-color: var(--cor8);
-        background-image: url(imagens/fundo-quem-somos.png);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 92px;
-        display: none;
-    }
-
-    .servicos1-mobile {
-        text-align: center;
-        color: #063643;
-        width: 100%;
-        height: 330px;
-        background-color: var(--cor8);
-        background-image: url(imagens/fundo-quem-somos.png);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .text-servicos1 {
-        margin-top: 30px;
-        gap: 40px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .text-servicos1>p {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    .servicos1-mobile>button {
-        width: 207px;
-        height: 38px;
-        border-radius: 2.19px;
-        font-weight: bolder;
-        font-size: 15.34px;
-        color: var(--cor2);
-        background-color: var(--cor1);
-        border-style: none;
-        transition: 0.2s;
-    }
-
-    .servicos1-mobile>button:hover {
-        background-color: var(--cor2);
-        color: var(--cor1);
-        cursor: pointer;
-    }
-
-    /* SERVIÇOS 2 */
-    .servicos2 {
-        display: none;
-    }
-
-    /* PROFISSIONAIS */
-    .profissionais{
-        display: none;
-    }
-
-    .profissionais-mobile > h2 {
-        padding: 30px;
-    }
-
-    .profissionais-mobile{
-        width: 100%;
-        margin-bottom: 48px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;  
-    }
-
-    .profissionais-mobile > .conteiner-profissional{
-        display: flex;
-        flex-wrap: wrap;
-        background-color: var(--cor1);
-        width: 100%;
-        height: 493px;
-    }
-
-    .conteudo-profissionais > img {
-        height: 166px;
-        width: 166px;
-    }
-
-}
+     .profissionais{
+         display: none;
+     }
+ 
+     .profissionais-mobile > h2 {
+         padding: 30px;
+     }
+ 
+     .profissionais-mobile{
+         width: 100%;
+         margin-bottom: 48px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         text-align: center;  
+     }
+ 
+     .profissionais-mobile > .conteiner-profissional{
+         display: flex;
+         flex-wrap: wrap;
+         background-color: var(--cor1);
+         width: 100%;
+         height: 493px;
+     }
+ 
+     .conteudo-profissionais > img {
+         height: 166px;
+         width: 166px;
+     }
+     */
+ 
+ }

@@ -1,4 +1,4 @@
-@media screen and (max-width: 1450px){
+@media screen and (max-width: 1450px){ /* Tela Notebook*/
 
    header{
         height: 100px;
@@ -140,6 +140,10 @@
         margin-top: 25px;
     }
 
+    .conteudo-servicos > img{
+        width: 250px;
+    }
+
     .texto-servicos1{
         width: 55%;
         font-size: 18px;
@@ -156,6 +160,121 @@
     .servicos2 > p{
         width: 55%;
         font-size: 18px;
+    }
+
+    .profissionais{
+        width: 75%;
+        padding: 10px;
+        margin-bottom: 48px;        
+    }
+
+    .profissionais > h2{
+        font-size: 22px;
+    }
+
+    .conteudo-profissionais{
+        height: 296px;
+        margin-top: 5%; 
+        flex: 0 1 190px; 
+    }
+
+    .conteudo-profissionais > img{
+        height: 190px;
+    }
+
+    .conteudo-profissionais > h3{
+        font-size: 16px;
+    }
+
+    .conteudo-profissionais > p{
+        font-size: 14px;
+    }
+
+    .avaliacoes {   
+        width: 70%;
+        margin-bottom: 40px;
+    }
+
+    .textoComentario {
+        font-size: 16px;  
+    }
+
+    .contato{
+        width: 70%;
+        margin-bottom: 48px;
+    }
+
+    .contato > h2{
+        font-size: 22px;
+    }
+
+    .formulario{
+        width: 70%;
+    }
+
+    label{
+        font-size: 18px;  
+    }
+
+    input[type="submit"]{
+        width: 150px;
+        font-size: 18px;
+    }
+
+    .localizacao{
+        width: 50%;
+    }
+
+    .localizacao h3{
+        font-size: 18px;
+    }
+
+    .info-form{
+        margin-left: 5%;
+        font-size: 18px;
+    }
+
+    .mapa{
+        margin: 70px 10% 40px 5%;  
+    }
+    
+    .mapa iframe{
+        height: 230px;
+        width: 320px;
+    }
+
+    span{
+        gap: 10px;
+    }
+
+    .icones-form{
+        gap: 6px;
+        margin-left: 5%;
+    }
+
+    .rodape{
+        width: 90%;
+    }
+
+    .conteudo-footer{
+        gap: 62px;
+    }
+
+    #imagem-blocos{
+        height: 175px;
+        width: 175px;
+    }
+
+    .blocos > h3{
+        font-size: 14px;        
+    }
+
+    .blocos > p{
+        font-size: 14px;
+    }
+
+    .blocos > img{
+        padding-right: 9px;
     }
 }
 

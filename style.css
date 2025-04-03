@@ -396,10 +396,6 @@ main{
     margin-top: 35px;
 }
 
-.conteudo-servicos > img{
-    width: 250px;
-}
-
 .texto-servicos1{
     width: 55%;
     color: var(--cor2);
@@ -439,7 +435,7 @@ main{
 
 .profissionais{
     width: 65%;
-    padding: 20px;
+    padding: 10px;
     background-color: var(--cor1);
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
@@ -507,6 +503,7 @@ main{
     justify-content: space-between;
 }
 
+
 .conteudo-avaliacoes > h1 {
     color: var(--cor2);
     margin-top: 5%;   
@@ -521,8 +518,9 @@ main{
     font-size: 18px;
 }
 
-.textoComentario  {
+.textoComentario {
     margin-left: 20px;  
+    flex-wrap: wrap;  
 }
 
 hr {
@@ -541,7 +539,9 @@ hr {
 .comentario1, .comentario2, .comentario3 {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
 }
+
 
 .btnComentarios {  
     background-color: var(--cor3);
@@ -678,8 +678,7 @@ input[type="submit"]:hover{
 .mapa{
     display: flex;
     align-items: center;
-    margin: 70px 10% 40px 10%;
-    
+    margin: 70px 5% 40px 10%;  
 }
 
 .mapa iframe{

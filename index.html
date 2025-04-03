@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Pindorama Pets</title>
 </head>
@@ -26,11 +27,11 @@
     </header>
 
     <main>
-        <section class="inicio" id="inicio">         
-                <h1 class="titulo-inicio ">Cuidando do Seu Pet com <br>Profissionalismo e Carinho</h1>
-                <div class="imagem-inicio ">
-                    <img id="imagem-animal" src="imagens/icone-contato.png" alt="Icone">
-                </div>
+        <section class="inicio" id="inicio">
+            <h1 class="titulo-inicio ">Cuidando do Seu Pet com <br>Profissionalismo e Carinho</h1>
+            <div class="imagem-inicio ">
+                <img id="imagem-animal" src="imagens/icone-contato.png" alt="Icone">
+            </div>
             <div class="caixa-inicio ">
                 <button class="btInicio">Entre em Contato</button>
                 <div class="animais-inicio">
@@ -44,7 +45,7 @@
                 <button onclick="trocarPaginaCarrossel('prev')">
                     <img src="imagens/flecha-esquerda.png" alt="Flecha Esquerda">
                 </button>
-        
+
                 <!-- Banners do Carrossel -->
                 <div class="banner-carrossel" data-pagina="1">
                     <div class="centro-carrossel">
@@ -53,28 +54,30 @@
                         <button class="btCarrossel1">Saiba Mais</button>
                     </div>
                 </div>
-        
+
                 <div class="banner-carrossel" data-pagina="2">
                     <div class="centro-carrossel2 texto-banner2">
                         <h1>Campanha de adoção</h1>
-                        <p>Dê um lar cheio de amor a quem só quer te fazer feliz! Adote um amigo de quatro patas e transforme sua vida e a dele.</p>
+                        <p>Dê um lar cheio de amor a quem só quer te fazer feliz! Adote um amigo de quatro patas e
+                            transforme sua vida e a dele.</p>
                         <button class="btCarrossel2">Saiba Mais</button>
                     </div>
                 </div>
-        
+
                 <div class="banner-carrossel" data-pagina="3">
                     <div class="centro-carrossel2">
                         <h1>Banho e tosa: cuidado e saúde para seu pet</h1>
-                        <p>Nossa clínica dispõe do serviço de higiene para seu Pet permanecer limpo, cheiroso e longe de parasitas.</p>
+                        <p>Nossa clínica dispõe do serviço de higiene para seu Pet permanecer limpo, cheiroso e longe de
+                            parasitas.</p>
                         <button class="btCarrossel3">Saiba Mais</button>
                     </div>
                 </div>
-        
+
                 <button onclick="trocarPaginaCarrossel('next')">
                     <img src="imagens/flecha-direita.png" alt="Flecha Direita">
                 </button>
             </div>
-        
+
             <!-- Indicadores de Páginas -->
             <div class="div-debaixo">
                 <div class="circulos">
@@ -84,7 +87,7 @@
                 </div>
             </div>
         </section>
-        
+
 
         <section class="container-info">
             <div class="quem-somos" id="quem-somos">
@@ -94,6 +97,21 @@
                     <p>Nossa clínica veterinária é comprometida com o cuidado e bem-estar de cada pet, com uma equipe
                         dedicada e instalações modernas, buscamos garantir saúde e conforto em cada atendimento.
                         Cuidamos do seu animalzinho como se fosse nosso!</p>
+                </div>
+            </div>
+
+            <div class="quem-somos-mobile" id="quem-somos">
+                <div class="titulo-img">
+                    <img class="imgMobile" src="imagens/logo-quem-somos-mobile.png" alt="Logo Quem-Somos">
+                    <h2>Quem Somos?</h2>
+
+                </div>
+                <div class="text">
+                    <p>Nossa clínica veterinária é comprometida com o cuidado e bem-estar de cada pet,
+                        com uma equipe dedicada e instalações modernas,
+                        buscamos garantir saúde e conforto em cada atendimento.
+                    </p>
+                    <h4>Cuidamos do seu animalzinho com amor!</h4>
                 </div>
             </div>
 
@@ -109,13 +127,50 @@
                 </div>
             </div>
 
+            <div class="servicos1-mobile">
+                <div class="text-servicos1">
+                    <h1>Nossos serviços visam o cuidado do seu pet </h1>
+                    <p>Na nossa clínica veterinária, cada consulta é realizada com dedicação
+                    e atenção aos detalhes, garantindo o melhor cuidado para o seu pet.</p>
+                </div>
+                <button>Agende uma consulta</button>
+            </div>
+
             <div class="servicos2">
-                <p>Nós cuidamos do seu pet com o carinho e respeito que ele merece. Nossa equipe dedica atenção a cada detalhe, proporcionando um ambiente acolhedor e seguro para que seu animalzinho se sinta em casa.</p>
+                <p>Nós cuidamos do seu pet com o carinho e respeito que ele merece. Nossa equipe dedica atenção a cada
+                    detalhe, proporcionando um ambiente acolhedor e seguro para que seu animalzinho se sinta em casa.
+                </p>
                 <img src="imagens/foto-servicos2.png" alt="Vetrinária e Golden Retriver">
             </div>
         </section>
 
         <section class="profissionais">
+            <h2>Nossos profissionais</h2>
+            <div class="conteiner-profissional">
+                <div class="conteudo-profissionais">
+                    <img src="imagens/medico1.png" alt="Foto Medico 1">
+                    <h3>Carlos De Souza</h3>
+                    <p>Cirurgia Veterinária</p>
+                </div>
+                <div class="conteudo-profissionais">
+                    <img src="imagens/medico2.png" alt="Foto Medico 2">
+                    <h3>João Paulo</h3>
+                    <p>Dermatologia Veterinária</p>
+                </div>
+                <div class="conteudo-profissionais">
+                    <img src="imagens/medico3.png" alt="Foto Medico 3">
+                    <h3>José da Silva</h3>
+                    <p>Patologia</p>
+                </div>
+                <div class="conteudo-profissionais">
+                    <img src="imagens/medico4.png" alt="Foto Medico 4">
+                    <h3>fulano</h3>
+                    <p>Anestesiologia</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="profissionais-mobile">
             <h2>Nossos profissionais</h2>
             <div class="conteiner-profissional">
                 <div class="conteudo-profissionais">
@@ -162,8 +217,9 @@
                             <div class="textoComentario">
                                 <img src="imagens/estrelas.png" alt="">
                                 <h4>Neymar Jr</h2>
-                                <p>Não poderia estar mais feliz com o serviço desta clínica. Profissionais qualificados
-                                    e atenciosos.</p>
+                                    <p>Não poderia estar mais feliz com o serviço desta clínica. Profissionais
+                                        qualificados
+                                        e atenciosos.</p>
                             </div>
                         </div>
                         <hr>
@@ -313,7 +369,7 @@
 
         <section class="rodape">
             <div>
-                <a href="#"><img id="imagem-blocos" src="imagens/logo-quem-somos.png" alt="Logo Pindorama Pets" ></a>
+                <a href="#"><img id="imagem-blocos" src="imagens/logo-quem-somos.png" alt="Logo Pindorama Pets"></a>
             </div>
             <div class="blocos">
                 <h3>Nossos serviços</h3>

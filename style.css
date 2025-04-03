@@ -374,6 +374,9 @@ main{
     gap: 120px;
 }
 
+.quem-somos-mobile{
+    display: none;
+}
 
 .quem-somos > img{
     width: 300px;
@@ -405,6 +408,9 @@ main{
 
 
 /*                                    Caixa de Serviços                                             */
+.servicos1-mobile{
+    display: none;
+}
 
 .servicos1{
     width: 100%;
@@ -796,3 +802,4 @@ span{
     font-size: 12px;
     color: var(--cor3);
 }
+

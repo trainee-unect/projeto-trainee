@@ -107,3 +107,5 @@ document.getElementById("prev").addEventListener("click", function () {
     trocarPaginaCarrossel('prev');
 });
 
+
+

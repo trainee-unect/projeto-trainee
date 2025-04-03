@@ -8,19 +8,19 @@ const linkLogoRodape = document.getElementById("imagem-blocos")
 linkLogoInicio.addEventListener("click", (e) => {
     const elemento = document.getElementById("inicio")
     e.preventDefault();
-    window.scrollTo({ top: elemento.offsetTop, behavior: "smooth" })
+    window.scrollTo({top: elemento.offsetTop, behavior: "smooth"})
 })
 
 linkLogoRodape.addEventListener("click", (e) => {
     const elemento = document.getElementById("inicio")
     e.preventDefault();
-    window.scrollTo({ top: elemento.offsetTop, behavior: "smooth" })
+    window.scrollTo({top: elemento.offsetTop, behavior: "smooth"})
 })
 
 linkInicio.addEventListener("click", (e) => {
     const elemento = document.getElementById("inicio")
     e.preventDefault();
-    window.scrollTo({ top: elemento.offsetTop, behavior: "smooth" })
+    window.scrollTo({top: elemento.offsetTop, behavior: "smooth"})
 })
 
 linkServicos.addEventListener("click", (e) => {
@@ -38,9 +38,8 @@ linkSobre.addEventListener("click", (e) => {
 linkContato.addEventListener("click", (e) => {
     const elemento = document.getElementById("contato")
     e.preventDefault();
-    window.scrollTo({ top: elemento.offsetTop, behavior: "smooth" })
-})
-
+    window.scrollTo({top: elemento.offsetTop, behavior: "smooth"})
+}) 
 
 let paginaAtual = 1;
 

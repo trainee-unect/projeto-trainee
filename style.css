@@ -13,9 +13,9 @@
     --cor6: #a3a3a3;
     --cor7: #89c5d5;
     --cor8: #63b3c9;
-
     --cor9: #fafdff;
     --cor10: #c7ebfb;
+    --cor11: #6BB7CB;
 
     --fonte1: "Poppins", sans-serif;
     --fonte2: "Open Sans", sans-serif;
@@ -25,7 +25,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden; 
+}
+
+.border{
+    border-style: solid;
 }
 
 body{
@@ -33,29 +36,31 @@ body{
     font-family: var(--fonte1);
 }
 
-header {
+header { 
     background-color: var(--cor1); 
     width: 100%;
-    margin: auto;
     height: 140px;
     border: 1px solid rgba(0, 0, 0, 0.103);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.151);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
-.logo {
-    margin-left: 390px;
-}
-
-nav {
-    height: 36px;
+.conteiner-nav{
+    width: 65%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 12px;
-    margin-right: 390px;
+}
+
+.navegação{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
 }
 
 .menu {
@@ -66,15 +71,6 @@ nav {
     padding-right: 4px;
 }
 
-.navegação{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 12px;
-    padding: 0px 4px;
-}
-
 .menu:hover {
     color: var(--cor2);
     background-color: rgba(107, 184, 203, 0.4);
@@ -82,22 +78,19 @@ nav {
     transition: 0.2s;
 }
 
-.border{
-    border-style: solid;
-}
-
-main{
+main{  
     background-color: var(--cor3);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .inicio {
+    position: relative;
     background-color: var(--cor1);
     height: 450px;
-    width: 1180px;
+    width: 70%;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
@@ -113,24 +106,26 @@ main{
 }
 
 .titulo-inicio{
+    width: 100%;
     color: var(--cor2);
     font-weight: 700;
     font-size: 28px;
     letter-spacing: 2%;
-    margin: 50px 0px 30px 48px;
+    margin-top: 5%;
+    margin-left: 5%;  
 }
 
 .btInicio{
-    width: 283px;
-    height: 72px;
+    width: 290px;
+    height: 75px;
     padding: 5px 10px;
-    margin-bottom: 30px;
     border-radius: 8px;
     border-style: none;
     background-color: var(--cor4);
     font-weight: 700;
     font-size: 28px;
     color: white;
+    cursor: pointer;
 }
 
 .btInicio:hover{
@@ -139,29 +134,24 @@ main{
     transition: 0.2s;
 }
 
-
 .imagem-inicio {
+    position: absolute;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    top: 40px;
+    right: 40px;
     width: 200px;
     height: 200px;
-    transform: rotate(135deg);
-}
-
-#imagem-animal{
     transform: rotate(45deg);
 }
 
-.animais-contato{
-    width: 717px;
-    height: 260px;
-    display: flex;
-    align-content: center;
+#imagem-animal{  
+    z-index: 3;
+    transform: rotate(45deg);
 }
 
 .carrossel{
-    width: 1180px;
     height: 330px;
     display: flex;
     flex-direction: column;
@@ -170,19 +160,91 @@ main{
     margin-bottom: 30px;
 }
 
-.banner-carrossel {
-    background-image: url(imagens/carrosel.png);
-    height: 300px;
-    width: 1094px; 
-    border-radius: 8px;
+.banner-carrossel[data-pagina="1"] {
+    background-image: url('imagens/carrossel-1.png'); 
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner-carrossel[data-pagina="2"] {
+    background-image: url('imagens/carrossel-3.png'); 
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner-carrossel[data-pagina="3"] {
+    background-image: url('imagens/carrossel-2.png'); 
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner-carrossel {   
+    height: 290px;
+    width: 65vw;
+    border-radius: 10px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.151);
+    display: flex;     
+}
+
+.flechas{
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
 }
 
-.btCarrossel{
+.flechas > button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.centro-carrossel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;   
+    margin-left: 40%;
+}
+
+.centro-carrossel > h1{
+    color: var(--cor2);
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 2%;
+}
+
+.carrossel p{
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 2%;
+    color: var(--cor4);
+}
+
+.centro-carrossel2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 5%;
+    width: 60%;
+}
+
+.centro-carrossel2 > h1{
+    color: var(--cor2);
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 2%;
+}
+
+.carrossel2 p{
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 2%;
+    color: var(--cor4);
+}
+
+.texto-banner2 h1, .texto-banner2 p{
+    color: var(--cor1);
+}
+
+.btCarrossel1{
     width: 283px;
     height: 72px;
     padding: 10px 5px;
@@ -192,39 +254,53 @@ main{
     color: var(--cor2);
     background-color: var(--cor1);
     border-style: none;
-    gap: 10px;
-    margin-top: 51px;
 }
 
-.btCarrossel:hover{
+.btCarrossel1:hover{
     background-color: var(--cor2);
     color: var(--cor1);
     transition: 0.2s;
+    cursor: pointer;
 }
 
-.centro-carrossel{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 12px;
-    margin-left: 150px;
-}
-
-.centro-carrossel > h1{
-    color: var(--cor2);
-    font-weight: 700;
+.btCarrossel2{
+    width: 283px;
+    height: 72px;
+    margin-left: 30px;
+    padding: 10px 5px;
+    border-radius: 4px;
+    font-weight: bolder;
     font-size: 28px;
-    letter-spacing: 2%;
-    margin-bottom: 12px;
-    margin-left: 20px;
+    color: var(--cor2);
+    background-color: var(--cor1);
+    border-style: none;
+    transition: 0.2s;
 }
 
-.carrossel p{
-    font-weight: 500;
-    font-size: 20px;
-    letter-spacing: 2%;
-    color: var(--cor4);
+.btCarrossel2:hover {
+    background-color: var(--cor5);
+    color: var(--cor2);   
+    cursor: pointer;
+}
+
+.btCarrossel3{
+    width: 283px;
+    height: 72px;
+    padding: 10px 5px;
+    margin-left: 30px;
+    border-radius: 4px;
+    font-weight: bolder;
+    font-size: 28px;
+    color: var(--cor1);
+    background-color: var(--cor2);
+    border-style: none;
+    transition: 0.2s;
+}
+
+.btCarrossel3:hover {
+    background-color: var(--cor5);
+    color: var(--cor2);    
+    cursor: pointer;
 }
 
 .div-debaixo {
@@ -242,36 +318,42 @@ main{
     gap: 25px; 
 }
 
-.circulo {
+.circulo1 {
+    width: 20px; 
+    height: 20px; 
+    background-color: var(--cor11); 
+    border-radius: 50%; 
+    cursor: pointer;
+}
+
+.circulo2 {
     width: 20px; 
     height: 20px; 
     background-color: var(--cor6); 
     border-radius: 50%; 
-}
-/*                                       Caixa do Quem-Somos                                             */
-.container-info{
-    width: 1920px;
+    cursor: pointer;
 }
 
-.quem-somos{
+/*                                       Caixa do Quem-Somos                                             */
+.container-info{
     width: 100%;
-    height: 300px;
     background-color: var(--cor7);
     background-image: url(imagens/fundo-quem-somos.png);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 120px;
+    margin-bottom: 50px;
 }
 
-
-.quem-somos > img{
-    width: 300px;
-    height: 300px;
-    margin-left: 500px;
+.quem-somos{
+    width: 65%;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .conteudo-quem-somos{
-    height: 300px;
+    width: 60%;
 }
 
 .conteudo-quem-somos > h2{
@@ -279,35 +361,31 @@ main{
     font-weight: bold;
     font-size: 24px;
     margin-bottom: 35px;
-    margin-top: 25px;
 }
 
-.conteudo-quem-somos > p{
-    max-width: 700px;
-    max-height: 300px;
+.conteudo-quem-somos > p {
     color: var(--cor2);
     font-family: var(--fonte2);
     font-weight: 400;
     font-size: 20px;
-    line-height: 26px;
+    line-height: 27px;
     letter-spacing: 2%;
 }
 
 /*                                    Caixa de Serviços                                             */
-
-.servicos1{
+.container-servicos1{
     width: 100%;
-    height: 420px;
-    background-color: var(--cor8);
-    background-image: url(imagens/fundo-quem-somos.png);
     display: flex;
-    align-items: center;
-    gap: 92px;
+    justify-content: center;
+    background-color: var(--cor8);
+    background-image: url(imagens/fundo-quem-somos.png); 
 }
 
-.conteudo-servicos{
-    margin-left: 500px;
-    height: 420px;
+.servicos1{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .conteudo-servicos > h2{
@@ -319,13 +397,12 @@ main{
 }
 
 .texto-servicos1{
-    max-width: 620px;
-    max-height: 150px;
+    width: 55%;
     color: var(--cor2);
     font-family: var(--fonte2);
     font-weight: 400;
     font-size: 20px;
-    line-height: 26px;
+    line-height: 27px;
     letter-spacing: 2%;
 }
 /*                              Caixas Serviços 2                                   */
@@ -336,43 +413,47 @@ main{
     background-color: var(--cor7);
     background-image: url(imagens/fundo-quem-somos.png);
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    gap: 64px;
-    margin-bottom: 48px;
+}
+
+.container-servicos2{
+    width: 65%;
 }
 
 .servicos2 > p{
-    margin-left: 500px;
-    max-width: 620px;
-    max-height: 120px;
+    width: 55%;
     color: var(--cor2);
     font-family: var(--fonte2);
     font-weight: 400;
     font-size: 20px;
-    line-height: 26px;
+    line-height: 27px;
     letter-spacing: 2%;
 }
 
 /*                          Caixa Profissionais                             */
 
 .profissionais{
-    width: 1180px;
-    height: 460px;
+    width: 65%;
+    padding: 10px;
     background-color: var(--cor1);
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     margin-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
 }
 
 .conteiner-profissional{
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
     justify-content: space-evenly;
 }
 
 .profissionais > h2{
-    margin-top: 40px;
-    margin-left: 80px;
+    margin-top: 5%;
+    margin-left: 5%;
     font-weight: 700;
     font-size: 24px;
     color: var(--cor2);
@@ -380,13 +461,13 @@ main{
 
 .conteudo-profissionais{
     height: 296px;
-    width: 240px;
-    margin-top: 40px;  
+    margin-top: 5%; 
+    flex: 0 1 230px; 
 }
 
 .conteudo-profissionais > img{
     height: 230px;
-    width: 230px;
+    width: 100%;
 }
 
 .conteudo-profissionais > h3{
@@ -408,74 +489,66 @@ main{
 
 /*                                          Caixa Avaliaçoes                                */
 
+.avaliacoes {   
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 60%;
+    margin-bottom: 40px;
+}
+
+.conteudo-avaliacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.conteudo-avaliacoes > h1 {
+    color: var(--cor2);
+    margin-top: 5%;   
+}
+
 .paginacao{
     display: flex;
+    justify-content: flex-end;
     gap: 20px;
     color: var(--cor2);
     font-weight: bold;
     font-size: 18px;
-    margin-top: 66px;
-    margin-left: 912px;
 }
 
-.textoComentario  {
-    margin-left: 27px;
-    max-width: 900px ;
-    
+.textoComentario {
+    margin-left: 20px;  
+    flex-wrap: wrap;  
 }
 
 hr {
     box-sizing: border-box;
     border-color: rgba(0, 0, 0, 0.1);
-    width: 1005px;
-    margin-top: 10px;
 }
 
 #comentarios {
-    margin-top: 43px;
-    min-width: 970px;
-    
+    margin-top: 40px;    
 }
 
 .comentario2, .comentario3 {
-    margin-top: 20px;
-}
-
-.avaliacoes{
-    width: 1180px;
-    height: 626px;
-    margin-bottom: 37px;
+    margin-top: 25px;
 }
 
 .comentario1, .comentario2, .comentario3 {
     display: flex;
     flex-direction: row;
-
-}
-.conteudo-avaliacoes {
-    
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: inherit;
-    height: 615px;
-    margin-left: 65px;
+    align-items: flex-start;
 }
 
-.conteudo-avaliacoes > h1 {
-    color: var(--cor2);
-    margin-top: 50px;
-    
-}
 
-.btnComentarios {
-    
+.btnComentarios {  
     background-color: var(--cor3);
     border-radius: 8px;
     height: 30px;
     width: 40px;
     padding: 5px 10px 5px 10px;
-    overflow-x: visible;
     display: flex;
     align-items: center;
     justify-self: center;
@@ -494,7 +567,7 @@ hr {
 
 .contato{
     height: 745px;
-    width: 1020px;
+    width: 60%;
     margin-bottom: 48px;
 }
 
@@ -511,7 +584,7 @@ hr {
 }
 
 .formulario{
-    width: 600px;
+    width: 60%;
     height: 692px;
     background-color: var(--cor9);
     border-top-right-radius: 8px;
@@ -578,7 +651,7 @@ input[type="submit"]:hover{
 }
 
 .localizacao{
-    width: 420px;
+    width: 40%;
     height: 692px;
     background-color: var(--cor1);
     border-top-left-radius: 8px;
@@ -594,7 +667,7 @@ input[type="submit"]:hover{
 }
 
 .info-form{
-    margin-left: 20px;
+    margin-left: 5%;
     font-style: italic;
     font-weight: 400;
     font-size: 20px;
@@ -605,8 +678,7 @@ input[type="submit"]:hover{
 .mapa{
     display: flex;
     align-items: center;
-    margin: 70px 0px 40px 35px;
-    
+    margin: 70px 5% 40px 10%;  
 }
 
 .mapa iframe{
@@ -631,14 +703,27 @@ span{
 
 /*                                  Footer                          */
 
-.rodape{
-    height: 232px;
+footer{
+    width: 100%;
     background-color: var(--cor1);
     border-top: 1px solid var(--cor10);
     border-bottom: 1px solid var(--cor10);
     text-transform: uppercase;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape{
+    width: 75%;
+    text-transform: uppercase;
+    display: flex;
     justify-content: center;
+    align-items: center; 
+}
+
+.conteudo-footer{
+    display: flex;
     gap: 100px;
 }
 
@@ -672,6 +757,7 @@ span{
 }
 
 .fim{
+    width: 100%;
     background-color: var(--cor2);
     text-align: center;
     text-transform: uppercase;

@@ -78,6 +78,14 @@ header {
     transition: 0.2s;
 }
 
+.logo-mobile{
+    display: none;
+}
+
+.menu-mobile{
+    display: none;
+}
+
 main{  
     background-color: var(--cor3);
     display: flex;
@@ -98,6 +106,7 @@ main{
     margin-bottom: 30px;
 }
 
+
 .caixa-inicio{
     display: flex;
     flex-direction: row;
@@ -106,7 +115,7 @@ main{
 }
 
 .titulo-inicio{
-    width: 100%;
+    width: 40%;
     color: var(--cor2);
     font-weight: 700;
     font-size: 28px;
@@ -372,6 +381,10 @@ main{
     letter-spacing: 2%;
 }
 
+#logo-quem-somos-mobile{
+    display: none;
+}
+
 /*                                    Caixa de Serviços                                             */
 .container-servicos1{
     width: 100%;
@@ -404,6 +417,14 @@ main{
     font-size: 20px;
     line-height: 27px;
     letter-spacing: 2%;
+}
+
+#gato-mobile{
+    display: none;
+}
+
+.btn-mobile{
+    display: none;
 }
 /*                              Caixas Serviços 2                                   */
 

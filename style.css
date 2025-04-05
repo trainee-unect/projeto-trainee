@@ -614,7 +614,9 @@ hr {
 /*                                          Caixa Contato                                   */
 
 
-
+.contato-mobile {
+    display: none;
+}
 .contato{
     height: 745px;
     width: 1020px;
@@ -753,7 +755,9 @@ span{
 }
 
 /*                                  Footer                          */
-
+.rodape-mobile {
+    display: none;
+}
 .rodape{
     height: 232px;
     background-color: var(--cor1);

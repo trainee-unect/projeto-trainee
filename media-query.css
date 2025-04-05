@@ -193,7 +193,7 @@
 
     .profissionais-mobile {
         width: 100%;
-
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -215,9 +215,7 @@
     .conteiner-profissional {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /* Duas colunas */
         gap: 0px;
-        /* Espaçamento entre os itens */
         background-color: var(--cor1);
         width: 100%;
         justify-content: center;
@@ -425,6 +423,9 @@
         display: none;
     }
 
+    .rodape-mobile {
+        display: inline;
+    }
     .fim {
         display: none;
     }

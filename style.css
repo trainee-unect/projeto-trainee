@@ -613,6 +613,8 @@ hr {
 
 /*                                          Caixa Contato                                   */
 
+
+
 .contato{
     height: 745px;
     width: 1020px;
@@ -770,6 +772,7 @@ span{
 
 .blocos{
     margin-top: 35px;
+    
 }
 
 .blocos > h3{

@@ -12,7 +12,7 @@
 
 <body>
 
-    <header>
+    <header class="header-desktop">
         <div class="logo">
             <a href="#"><img src="imagens/logo-header.png" id="logo" alt="Logo da Pindorama Pets"></a>
         </div>
@@ -24,6 +24,13 @@
                 <li><a href="#" class="menu" id="navContato">Contato</a></li>
             </ul>
         </nav>
+    </header>
+
+    <header class="header-mobile">
+        <a href="#"><img src="imagens/menu-mobile.png" alt=""></a>
+        <div class="logo-mobile">
+            <a href="#"><img src="imagens/logo-mobile.png" id="logo" alt="Logo da Pindorama Pets"></a>
+        </div>
     </header>
 
     <main>
@@ -131,7 +138,7 @@
                 <div class="text-servicos1">
                     <h1>Nossos serviços visam o cuidado do seu pet </h1>
                     <p>Na nossa clínica veterinária, cada consulta é realizada com dedicação
-                    e atenção aos detalhes, garantindo o melhor cuidado para o seu pet.</p>
+                        e atenção aos detalhes, garantindo o melhor cuidado para o seu pet.</p>
                 </div>
                 <button>Agende uma consulta</button>
             </div>
@@ -204,16 +211,16 @@
                     <!-- Página 1 -->
                     <div class='comentario' data-pagina="1">
                         <div class="comentario1">
-                            <img src="imagens/foto-avaliacao1.png" alt="Foto">
+                            <img class="foto-comentario" src="imagens/foto-avaliacao1.png" alt="Foto">
                             <div class="textoComentario">
-                                <img src="imagens/estrelas.png" alt="">
+                                <img class="img-estrelas" src="imagens/estrelas.png" alt="">
                                 <h4>Carlos Alberto</h4>
                                 <p>Atendimento excepcional! A equipe foi muito cuidadosa e atenciosa com meu pet.</p>
                             </div>
                         </div>
                         <hr>
                         <div class="comentario2">
-                            <img src="imagens/foto-avaliacao2.png" alt="Foto">
+                            <img class="foto-comentario" src="imagens/foto-avaliacao2.png" alt="Foto">
                             <div class="textoComentario">
                                 <img src="imagens/estrelas.png" alt="">
                                 <h4>Neymar Jr</h2>
@@ -224,7 +231,7 @@
                         </div>
                         <hr>
                         <div class="comentario3">
-                            <img src="imagens/foto-avaliacao3.png" alt="Foto">
+                            <img class="foto-comentario" src="imagens/foto-avaliacao3.png" alt="Foto">
                             <div class="textoComentario">
                                 <img src="imagens/estrelas.png" alt="">
                                 <h4>Josseana da Silva</h4>
@@ -237,7 +244,7 @@
                     <!-- Página 2 -->
                     <div class='comentario' data-pagina="2">
                         <div class="comentario1">
-                            <img src="imagens/foto-avaliacao1.png" alt="Foto">
+                            <img class="foto-comentario" src="imagens/foto-avaliacao1.png" alt="Foto">
                             <div class="textoComentario">
                                 <img src="imagens/estrelas.png" alt="">
                                 <h4>João Henrique</h4>
@@ -247,7 +254,7 @@
                         </div>
                         <hr>
                         <div class="comentario2">
-                            <img src="imagens/foto-avaliacao2.png" alt="Foto">
+                            <img class="foto-comentario" src="imagens/foto-avaliacao2.png" alt="Foto">
                             <div class="textoComentario">
                                 <img src="imagens/estrelas.png" alt="">
                                 <h4>Adamilton Jr</h4>
@@ -257,7 +264,7 @@
                         </div>
                         <hr>
                         <div class="comentario3">
-                            <img src="imagens/foto-avaliacao3.png" alt="Foto">
+                            <img class="foto-comentario" src="imagens/foto-avaliacao3.png" alt="Foto">
                             <div class="textoComentario">
                                 <img src="imagens/estrelas.png" alt="">
                                 <h4>Luciana da Silva</h4>
@@ -270,7 +277,7 @@
                     <!-- Página 3 -->
                     <div class='comentario' data-pagina="3">
                         <div class="comentario1">
-                            <img src="imagens/foto-avaliacao1.png" alt="Foto">
+                            <img class="foto-comentario" src="imagens/foto-avaliacao1.png" alt="Foto">
                             <div class="textoComentario">
                                 <img src="imagens/estrelas.png" alt="">
                                 <h4>Matheus Brito</h4>
@@ -280,7 +287,7 @@
                         </div>
                         <hr>
                         <div class="comentario2">
-                            <img src="imagens/foto-avaliacao2.png" alt="Foto">
+                            <img class="foto-comentario" src="imagens/foto-avaliacao2.png" alt="Foto">
                             <div class="textoComentario">
                                 <img src="imagens/estrelas.png" alt="">
                                 <h4>Luiz Jr</h4>
@@ -291,7 +298,7 @@
                         <hr>
 
                         <div class="comentario3">
-                            <img src="imagens/foto-avaliacao3.png" alt="">
+                            <img class="foto-comentario" src="imagens/foto-avaliacao3.png" alt="">
                             <div class="textoComentario">
                                 <img src="imagens/estrelas.png" alt="">
                                 <h4>Clariane da Silva</h4>
@@ -363,6 +370,32 @@
                 </div>
             </div>
         </section>
+
+        <section class="contanto-mobile">
+            <div class="formulario-mobile">
+                <h1>Entre em contato</h1>
+                <form>
+                    <div class="caixa">
+                        <label for="nome">Nome</label>
+                        <input class="input" type="name" id="nome" name="nome">
+                    </div>
+                    <div class="caixa">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input class="input" type="name" id="sobrenome" name="sobrenome">
+                    </div>
+
+                    <div class="caixa">
+                        <label for="email">Email</label>
+                        <input class="input" type="email" id="email" name="email">
+                    </div>
+                    <div class="caixa">
+                        <label for="mensagem"> Mensagem </label>
+                        <textarea name="mensagem" id="mensagem"></textarea>
+                    </div>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -395,7 +428,38 @@
             <p>Unect JR - Todos os direitos reservados</p>
         </section>
 
+        <section class="rodape-mobile">
+
+            <div class="blocos" id="icones">
+                <img src="imagens/icon-whatsapp.png" alt="Icone WhatsApp">
+                <img src="imagens/icon-instagram.png" alt="Icone Instagram">
+                <img src="imagens/icon-face.png" alt="Icone Facebook">
+            </div>
+
+            <div class="links-rodape">
+                <div class="blocos">
+                    <h3>Nossos serviços</h3>
+                    <p>Sobre nós</p>
+                    <p>Consulta veterinária </p>
+                    <p>Nossos serviços</p>
+                </div>
+                <div class="blocos">
+                    <h3>Institucional</h3>
+                    <p>Programa de adoção</p>
+                    <p>Termos de Compromisso</p>
+                    <p>Unect jR</p>
+                </div>
+            </div>
+            <section class="fim-mobile">
+                <p>Unect JR - Todos os direitos reservados</p>
+            </section>
+        </section>
+
+        
+
     </footer>
+
+
 
     <script src="DOM.js"></script>
 </body>

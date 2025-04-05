@@ -22,6 +22,40 @@
         font-family: var(--fonte1);
     }
 
+    /* HEADER */
+
+    .header-desktop {
+        display: none;
+    }
+
+    .header-mobile {
+        margin-top: 33px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding: 10px;
+    }
+
+    .header-mobile a:first-child {
+        flex: 0 0 auto;
+    }
+
+    .logo-mobile {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .logo-mobile img {
+        height: 70px;
+        width: auto;
+    }
+
+
+    /* INICIO */
+
+
     .inicio {
         position: relative;
         background-color: var(--cor1);
@@ -149,34 +183,289 @@
     }
 
     /* PROFISSIONAIS */
-    .profissionais{
+    .profissionais {
         display: none;
     }
 
-    .profissionais-mobile > h2 {
+    .profissionais-mobile>h2 {
         padding: 30px;
     }
 
-    .profissionais-mobile{
+    .profissionais-mobile {
         width: 100%;
-        margin-bottom: 48px;
+
         display: flex;
         flex-direction: column;
         justify-content: center;
-        text-align: center;  
+        text-align: center;
     }
 
-    .profissionais-mobile > .conteiner-profissional{
-        display: flex;
-        flex-wrap: wrap;
+    .conteudo-profissionais {
+        padding: 0;
+        margin: 0;
+        width: 166px;
+        margin: auto;
+        height: 250px;
+    }
+
+    .conteudo-profissionais>p {
+        font-size: 12px;
+    }
+
+    .conteiner-profissional {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* Duas colunas */
+        gap: 0px;
+        /* Espaçamento entre os itens */
         background-color: var(--cor1);
         width: 100%;
-        height: 493px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 17px;
     }
 
-    .conteudo-profissionais > img {
+    .conteudo-profissionais>img {
         height: 166px;
         width: 166px;
     }
 
+
+    /* AVALIAÇOES */
+
+    .paginacao {
+        display: flex;
+        gap: 20px;
+        color: var(--cor2);
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 50px;
+        margin-left: 12px;
+        justify-content: center;
+    }
+
+
+
+    .textoComentario {
+        flex: 1;
+        font-size: 12px;
+        max-width: 600px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    #comentarios {
+        margin-top: 0px;
+        min-width: 400px;
+
+    }
+
+    .comentario2,
+    .comentario3 {
+        margin-top: 20px;
+    }
+
+
+    .foto-comentario {
+        height: 60px;
+        width: 60px;
+        object-fit: cover;
+        margin-right: 0px;
+        margin-left: 25px;
+    }
+
+    .avaliacoes {
+        width: 100%;
+        height: 500px;
+        margin-bottom: 0px;
+    }
+
+
+
+    .comentario1,
+    .comentario2,
+    .comentario3 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 95%;
+        min-height: 60px;
+        max-width: 400px;
+        flex-wrap: wrap;
+    }
+
+    .textoComentario>img {
+        height: 13.239721298217773px;
+        width: 86.83331298828125px;
+    }
+
+    .conteudo-avaliacoes {
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: inherit;
+        height: 490px;
+        margin-left: 0px;
+
+    }
+
+    .conteudo-avaliacoes>h1 {
+        color: var(--cor2);
+        justify-content: center;
+        margin-top: 0px;
+        text-align: center;
+        padding: 20px;
+
+    }
+
+    .btnComentarios {
+
+        background-color: var(--cor3);
+        border-radius: 8px;
+        height: 30px;
+        width: 40px;
+        padding: 5px 10px 5px 10px;
+        overflow-x: visible;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        border-color: #063643;
+    }
+
+    .btnComentarios:hover {
+        background-color: var(--cor9);
+    }
+
+    .btnComentarios:active {
+        background-color: var(--cor2);
+    }
+
+    /* MAPA */
+
+    .contato {
+        display: none;
+    }
+
+    .contato-mobile {
+        width: 100%;
+        height: auto;
+        display: inline;
+    }
+
+
+    .formulario-mobile {
+        width: 400px;
+        height: auto;
+        background-color: var(--cor9);
+        border-radius: 0px;
+        border-top: 1px solid rgba(6, 54, 67, 0.4);
+        border-right: 1px solid rgba(6, 54, 67, 0.4);
+        border-bottom: 1px solid rgba(6, 54, 67, 0.4);
+    }
+
+    .formulario-mobile>h1 {
+        text-align: center;
+        padding-top: 20px;
+        color: #063643;
+    }
+
+    .caixa {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: 40px
+    }
+
+    .input {
+        height: 50px;
+        border-radius: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+        align-items: center;
+        justify-content: center;
+    }
+
+    textarea {
+        height: 100px;
+        border-radius: 8px;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(0, 0, 0, 0.4);
+    }
+
+    label {
+        font-weight: 700;
+        font-size: 20px;
+        color: var(--cor2);
+    }
+
+    input[type="submit"] {
+        display: block;
+        margin: 0 auto;
+        padding: 10px 20px;
+        background-color: var(--cor4);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    /* RODAPE */
+
+    .rodape {
+        display: none;
+    }
+
+    .fim {
+        display: none;
+    }
+
+    #icones {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        height: 63px;
+    }
+
+    .links-rodape {
+        display: flex;
+        height: 186px;
+        width: 100%;
+        background-color: #f8f8ff;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .blocos{
+        margin-top: 35px;
+        margin-bottom: 35px;
+        
+    }
+    .blocos > p {
+        font-size: 12px;
+    }
+
+    .blocos > h {
+        font-size: 12px;
+    }
+
+    .fim-mobile{
+        background-color: var(--cor2);
+        text-align: center;
+        text-transform: uppercase;
+        padding: 12px;
+        font-family: var(--fonte1);
+        font-weight: 700;
+        font-size: 12px;
+        color: var(--cor3);
+    }
 }

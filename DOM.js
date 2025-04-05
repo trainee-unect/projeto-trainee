@@ -8,37 +8,61 @@ const linkLogoRodape = document.getElementById("imagem-blocos")
 linkLogoInicio.addEventListener("click", (e) => {
     const elemento = document.getElementById("inicio")
     e.preventDefault();
-    window.scrollTo({top: elemento.offsetTop, behavior: "smooth"})
+    elemento.scrollIntoView({
+        behavior:"smooth",
+        block: "start",
+        inline: "nearest",
+    })
 })
 
 linkLogoRodape.addEventListener("click", (e) => {
     const elemento = document.getElementById("inicio")
     e.preventDefault();
-    window.scrollTo({top: elemento.offsetTop, behavior: "smooth"})
+    elemento.scrollIntoView({
+        behavior:"smooth",
+        block: "start",
+        inline: "nearest",
+    })
 })
 
 linkInicio.addEventListener("click", (e) => {
     const elemento = document.getElementById("inicio")
     e.preventDefault();
-    window.scrollTo({top: elemento.offsetTop, behavior: "smooth"})
+    elemento.scrollIntoView({
+        behavior:"smooth",
+        block: "start",
+        inline: "nearest",
+    })
 })
 
 linkServicos.addEventListener("click", (e) => {
     const elemento = document.getElementById("servicos1")
     e.preventDefault();
-    window.scrollTo({ top: elemento.offsetTop, behavior: "smooth" })
+    elemento.scrollIntoView({
+        behavior:"smooth",
+        block: "start",
+        inline: "nearest",
+    })
 })
 
 linkSobre.addEventListener("click", (e) => {
     const elemento = document.getElementById("quem-somos")
     e.preventDefault();
-    window.scrollTo({ top: elemento.offsetTop, behavior: "smooth" })
+    elemento.scrollIntoView({
+        behavior:"smooth",
+        block: "start",
+        inline: "nearest",
+    })
 })
 
 linkContato.addEventListener("click", (e) => {
     const elemento = document.getElementById("contato")
     e.preventDefault();
-    window.scrollTo({top: elemento.offsetTop, behavior: "smooth"})
+    elemento.scrollIntoView({
+        behavior:"smooth",
+        block: "start",
+        inline: "nearest",
+    })
 }) 
 
 let paginaAtual = 1;

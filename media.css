@@ -115,7 +115,8 @@
      }
  
      .quem-somos{
-         width: 75%;   
+         width: 75%; 
+         scroll-margin-top: 100px;  
      }
  
      .conteudo-quem-somos > h2{       
@@ -133,6 +134,7 @@
  
      .servicos1{
          width: 80%;
+         scroll-margin-top: 100px;
      }
  
      .conteudo-servicos > h2{
@@ -183,11 +185,11 @@
      }
  
      .conteudo-profissionais > h3{
-         font-size: 16px;
+         font-size: 18px;
      }
  
      .conteudo-profissionais > p{
-         font-size: 14px;
+         font-size: 16px;
      }
  
      .avaliacoes {   
@@ -202,6 +204,7 @@
      .contato{
          width: 70%;
          margin-bottom: 48px;
+         scroll-margin-top: 100px;
      }
  
      .contato > h2{
@@ -278,7 +281,7 @@
      }
  }
  
- @media screen and (max-width: 950px) {
+ @media screen and (max-width: 1000px) {
  
      header{
          height: 110px;   
@@ -323,10 +326,12 @@
          display: none;
      }
  
-     .inicio {
-         display: flex;
-         flex-direction: column;
+     .inicio {      
          background-color: transparent;
+         background-image: url(imagens/elipse.png);
+         background-size: contain;
+         background-position: center center;
+         background-repeat: no-repeat;
          border: none;
          box-shadow: none;
          width: 100%;
@@ -437,6 +442,9 @@
      }
  
      .texto-servicos1{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
          width: 100%;
          font-size: 17px;
          line-height: 25px;
@@ -445,21 +453,54 @@
  
      #gato-mobile{
          display: flex;
+         margin-left: 250px;
      }
  
      .btn-mobile{
          display: flex;
-         width: 220px;
-         height: 45px;
+         align-items: center;
+         justify-content: center;
+         margin-top: 20px;
+         margin-bottom: 10px;
+         width: 240px;
+         height: 50px;
+         border: none;
+         border-radius: 5px;
+         background-color: var(--cor1);
+         color: var(--cor2);
+         font-family: var(--fonte1);
+         font-size: 17px;
+         font-weight: 700;
+         cursor: pointer;
+         
+     }
+
+     .btn-mobile:hover{
+        transition: 0.2s;
+        background-color: var(--cor2);color: var(--cor1);
      }
  
      #foto-veterinaria{
          display: none;
      }
- 
-     .servicos2{
+   
+    .servicos2{
          display: none;
      }
+
+     .profissionais{
+        width: 100%;
+     }
+
+     .conteudo-profissionais{
+        flex-flow: row wrap;
+     }
+
+     .conteudo-profissionais > img{
+        width: 220px;
+        height: 220px;
+     }
+
  
   
  

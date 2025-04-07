@@ -177,7 +177,6 @@
      .conteudo-profissionais{
          height: 296px;
          margin-top: 5%; 
-         flex: 0 1 190px; 
      }
  
      .conteudo-profissionais > img{
@@ -189,7 +188,7 @@
      }
  
      .conteudo-profissionais > p{
-         font-size: 16px;
+         font-size: 15px;
      }
  
      .avaliacoes {   
@@ -281,14 +280,14 @@
      }
  }
  
- @media screen and (max-width: 1000px) {
+ @media screen and (max-width: 980px) {
  
      header{
          height: 110px;   
      }
  
      .conteiner-nav{
-         width: 95%;
+         width: 90%;
          display: flex;
          justify-content: space-between;
      }
@@ -335,8 +334,8 @@
          border: none;
          box-shadow: none;
          width: 100%;
-         margin-top: 20px;
-         margin-bottom: 30px;
+         margin-top: 5%;
+         margin-bottom: 10%;
      }
  
      .caixa-inicio{
@@ -481,28 +480,116 @@
      }
  
      #foto-veterinaria{
-         display: none;
+        display: none;
      }
    
     .servicos2{
-         display: none;
+        display: none;
+     }
+
+     #texto-profissionais-mobile{
+        display: block;
+        font-family: var(--fonte1);
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--cor2);
+        margin-bottom: 30px;
      }
 
      .profissionais{
         width: 100%;
-     }
+     }    
 
-     .conteudo-profissionais{
-        flex-flow: row wrap;
+     .profissionais > h2{
+        display: none;
+    }
+
+    .conteiner-profissional{
+        width: 95%;      
+    }
+
+     .conteudo-profissional{
+        justify-content: space-between;
      }
 
      .conteudo-profissionais > img{
-        width: 220px;
-        height: 220px;
+        width: 230px;
+        height: 230px;
      }
+   
+    .conteudo-profissionais > h3{
+        font-size: 18px;
+    }
 
+    .conteudo-profissionais > p{
+        font-size: 15px;
+    }
+
+     .bloco-profissional{
+        flex-wrap: wrap;
+
+    }
+
+    .avaliacoes {   
+        gap: 40px;
+        width: 90%;
+        margin-bottom: 40px;
+    }
+
+    .conteudo-avaliacoes::before {
+        content: "Avaliações (9)";
+        margin-top: 0;  
+        text-align: center;
+        color: var(--cor2);
+        font-size: 24px;
+        font-family: var(--fonte1);
+        font-weight: 700;
+        margin-top: 5%;
+    }
+
+    .conteudo-avaliacoes > h1 {
+        display: none;
+    }
+
+    .paginacao{
+        justify-content: center;
+        gap: 50px;
+        font-size: 20px;
+        line-height: 30px;
+    }
  
+    .textoComentario {
+        margin-left: 30px;    
+    }
   
+    hr {
+        display: none;
+    }
+
+    #comentarios {
+        margin-top: 30px;    
+    }
+
+    #comentarios h4{
+        letter-spacing: 1%;
+        font-size: 18px;
+
+    }
+    
+    #comentarios p{
+        letter-spacing: 1%;
+        font-size: 16px;
+    }
+
+    .btnComentarios{
+        display: none;
+    }
+
+    .btnComentarioMobile{
+        display: flex;
+        background-color: transparent;
+        border: none;
+    }
  
  
  

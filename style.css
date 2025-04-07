@@ -457,6 +457,10 @@ main{
 
 /*                          Caixa Profissionais                             */
 
+#texto-profissionais-mobile{
+    display: none;
+}
+
 .profissionais{
     width: 65%;
     padding: 10px;
@@ -466,13 +470,18 @@ main{
     margin-bottom: 48px;
     display: flex;
     flex-direction: column;
-    justify-content: center;  
 }
 
 .conteiner-profissional{
     display: flex;
     flex-flow: row nowrap;
+}
+
+.bloco-profissional{
+    display: flex;
+    width: 50%;
     justify-content: space-evenly;
+    
 }
 
 .profissionais > h2{
@@ -485,8 +494,7 @@ main{
 
 .conteudo-profissionais{
     height: 296px;
-    margin-top: 5%; 
-    flex: 0 1 230px; 
+    margin-top: 5%;
 }
 
 .conteudo-profissionais > img{
@@ -530,6 +538,9 @@ main{
 
 .conteudo-avaliacoes > h1 {
     color: var(--cor2);
+    font-size: 24px;
+    font-family: var(--fonte1);
+    font-weight: 700;
     margin-top: 5%;   
 }
 
@@ -556,6 +567,20 @@ hr {
     margin-top: 40px;    
 }
 
+#comentarios h4{
+    font-family: var(--fonte2);
+    font-size: 22px;
+    font-weight: 400;
+    color:var(--cor2);
+}
+
+#comentarios p{
+    font-family: var(--fonte2);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--cor2);
+}
+
 .comentario2, .comentario3 {
     margin-top: 25px;
 }
@@ -565,7 +590,6 @@ hr {
     flex-direction: row;
     align-items: flex-start;
 }
-
 
 .btnComentarios {  
     background-color: var(--cor3);
@@ -584,7 +608,7 @@ hr {
 }
 
 .btnComentarios:active {
-    background-color: var(--cor2);
+    background-color: var(--cor2);    
 }
 
 /*                                          Caixa Contato                                   */

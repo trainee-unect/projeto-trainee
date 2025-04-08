@@ -569,16 +569,17 @@ hr {
 
 #comentarios h4{
     font-family: var(--fonte2);
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 400;
     color:var(--cor2);
 }
 
 #comentarios p{
     font-family: var(--fonte2);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     color: var(--cor2);
+    padding: 10px 0px;
 }
 
 .comentario2, .comentario3 {
@@ -609,6 +610,10 @@ hr {
 
 .btnComentarios:active {
     background-color: var(--cor2);    
+}
+
+.btnComentarioMobile{
+    display: none;
 }
 
 /*                                          Caixa Contato                                   */
@@ -677,7 +682,7 @@ label{
 }
 
 .input:focus , textarea:focus{
-    border: 3px solid var(--cor2);
+    border: 2px solid var(--cor2);
     outline: none;
     transition: 0.1s;
 }

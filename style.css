@@ -344,7 +344,6 @@ main{
     cursor: pointer;
 }
 
-/*                                       Caixa do Quem-Somos                                             */
 .container-info{
     width: 100%;
     background-color: var(--cor7);
@@ -387,7 +386,6 @@ main{
     display: none;
 }
 
-/*                                    Caixa de Serviços                                             */
 .container-servicos1{
     width: 100%;
     display: flex;
@@ -429,7 +427,6 @@ main{
 .btn-mobile{
     display: none;
 }
-/*                              Caixas Serviços 2                                   */
 
 .servicos2{
     width: 100%;
@@ -454,8 +451,6 @@ main{
     line-height: 27px;
     letter-spacing: 2%;
 }
-
-/*                          Caixa Profissionais                             */
 
 #texto-profissionais-mobile{
     display: none;
@@ -518,8 +513,6 @@ main{
     color: var(--cor2);
     text-align: center;
 }
-
-/*                                          Caixa Avaliaçoes                                */
 
 .avaliacoes {   
     display: flex;
@@ -615,8 +608,6 @@ hr {
 .btnComentarioMobile{
     display: none;
 }
-
-/*                                          Caixa Contato                                   */
 
 .contato{
     height: 745px;
@@ -755,7 +746,9 @@ span{
     margin-left: 20px;
 }
 
-/*                                  Footer                          */
+#icones-mobile{
+    display: none;
+}
 
 footer{
     width: 100%;
@@ -766,6 +759,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .rodape{
@@ -778,7 +772,7 @@ footer{
 
 .conteudo-footer{
     display: flex;
-    gap: 100px;
+    gap: 90px;
 }
 
 #imagem-blocos{

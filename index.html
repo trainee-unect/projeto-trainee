@@ -260,20 +260,28 @@
                     </div>
                 </div>
 
-                <!-- Paginação -->
+    
                 
             </div>
+
             <div class="paginacao">
-                <button class="btnComentarios" id="prev" onclick="trocarPagina('prev')"><img
-                        src="imagens/setaPrev.png" alt="Seta Esquerda"></button>
+                <!-- Desktop -->
+                <button class="btnComentarios" id="prev" onclick="trocarPagina('prev')">
+                    <img src="imagens/setaPrev.png" alt="Seta Esquerda">
+                </button>
                 <span class="btnComentarios" id="paginaAtual">1</span>
-                <button class="btnComentarios" id="next" onclick="trocarPagina('next')"><img
-                        src="imagens/setaNext.png" alt="Seta Direita"></button>
-                <button class="btnComentarioMobile" id="prev" onclick="trocarPagina('prev')"><img
-                        src="imagens/seta-esq-mobile.png" alt="Seta Esquerda Mobile"></button>
-                <span class="btnComentarioMobile" id="paginaAtual">1</span>
-                <button class="btnComentarioMobile" id="next" onclick="trocarPagina('next')"><img
-                        src="imagens/seta-dir-mobile.png" alt="Seta Direita Mobile"></button>
+                <button class="btnComentarios" id="next" onclick="trocarPagina('next')">
+                    <img src="imagens/setaNext.png" alt="Seta Direita">
+                </button>
+                
+                <!-- Mobile -->
+                <button class="btnComentarioMobile" id="prevMob" onclick="trocarPagina('prevMob')">
+                    <img src="imagens/seta-esq-mobile.png" alt="Seta Esquerda Mobile">
+                </button>
+                <span class="btnComentarioMobile" id="paginaAtualMob">1</span>
+                <button class="btnComentarioMobile" id="nextMob" onclick="trocarPagina('nextMob')">
+                    <img src="imagens/seta-dir-mobile.png" alt="Seta Direita Mobile">
+                </button>
             </div>
         </section>
 

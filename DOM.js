@@ -65,33 +65,57 @@ linkContato.addEventListener("click", (e) => {
     })
 }) 
 
+
 let paginaAtual = 1;
+let paginaAtualMob = 1;
 
 function trocarPagina(acao) {
     const comentarios = document.querySelectorAll('.comentario');
     const totalPaginas = 3;
-    const prev = document.getElementById("prev")
-    const next = document.getElementById("next")
 
+    const prev = document.getElementById("prev");
+    const next = document.getElementById("next");
+    const prevMob = document.getElementById("prevMob");
+    const nextMob = document.getElementById("nextMob");
+
+    // Navegação desktop
     if (acao === 'prev' && paginaAtual > 1) paginaAtual--;
     if (acao === 'next' && paginaAtual < totalPaginas) paginaAtual++;
 
+    // Navegação mobile
+    if (acao === 'prevMob' && paginaAtualMob > 1) paginaAtualMob--;
+    if (acao === 'nextMob' && paginaAtualMob < totalPaginas) paginaAtualMob++;
 
+    // Atualiza números na tela
     document.getElementById('paginaAtual').textContent = paginaAtual;
+    document.getElementById('paginaAtualMob').textContent = paginaAtualMob;
 
+    // Atualiza exibição dos comentários
+    let paginaReferencia = acao.includes("Mob") ? paginaAtualMob : paginaAtual;
     comentarios.forEach(comentario => {
-        comentario.style.display = comentario.getAttribute('data-pagina') == paginaAtual ? 'block' : 'none';
-
+        comentario.style.display = comentario.getAttribute('data-pagina') == paginaReferencia ? 'block' : 'none';
     });
 
-    document.getElementById('prev').disabled = paginaAtual === 1;
-    document.getElementById('next').disabled = paginaAtual === totalPaginas;
-
+    // Controle de botões Desktop
+    prev.disabled = paginaAtual === 1;
+    next.disabled = paginaAtual === totalPaginas;
     prev.style.visibility = paginaAtual === 1 ? 'hidden' : 'visible';
     next.style.visibility = paginaAtual === totalPaginas ? 'hidden' : 'visible';
+
+    // Controle de botões Mobile
+    prevMob.disabled = paginaAtualMob === 1;
+    nextMob.disabled = paginaAtualMob === totalPaginas;
+    prevMob.style.visibility = paginaAtualMob === 1 ? 'hidden' : 'visible';
+    nextMob.style.visibility = paginaAtualMob === totalPaginas ? 'hidden' : 'visible';
 }
 
-trocarPagina();
+// Executa ao carregar
+trocarPagina('next'); // pode ser qualquer ação inicial só pra ativar
+
+
+
+
+
 
 // Variáveis do carrossel
 let paginaAtualCarrossel = 1;

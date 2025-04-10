@@ -179,19 +179,19 @@ main{
 }
 
 .banner-carrossel[data-pagina="1"] {
-    background-image: url('../imagens/carrossel-1.png'); 
+    background-image: url('imagens/carrossel-1.png'); 
     background-size: cover;
     background-position: center center;
 }
 
 .banner-carrossel[data-pagina="2"] {
-    background-image: url('../imagens/carrossel-2.png'); 
+    background-image: url('imagens/carrossel-3.png'); 
     background-size: cover;
     background-position: center center;
 }
 
 .banner-carrossel[data-pagina="3"] {
-    background-image: url('../imagens/carrossel-2.png'); 
+    background-image: url('imagens/carrossel-2.png'); 
     background-size: cover;
     background-position: center center;
 }

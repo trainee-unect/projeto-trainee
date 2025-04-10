@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+/* Configurações Gerais*/
+
 :root{
     --cor1: #f8f8ff;
     --cor2: #063643;
@@ -35,6 +37,8 @@ body{
     background-color: var(--cor3);
     font-family: var(--fonte1);
 }
+
+/*Header*/
 
 header { 
     background-color: var(--cor1); 
@@ -93,6 +97,8 @@ main{
     justify-content: center;
     align-items: center;
 }
+
+/*Incio*/
 
 .inicio {
     position: relative;
@@ -161,6 +167,8 @@ main{
     transform: rotate(45deg);
 }
 
+/*Carrossel*/
+
 .carrossel{
     height: 330px;
     display: flex;
@@ -171,19 +179,19 @@ main{
 }
 
 .banner-carrossel[data-pagina="1"] {
-    background-image: url('imagens/carrossel-1.png'); 
+    background-image: url('../imagens/carrossel-1.png'); 
     background-size: cover;
     background-position: center center;
 }
 
 .banner-carrossel[data-pagina="2"] {
-    background-image: url('imagens/carrossel-3.png'); 
+    background-image: url('../imagens/carrossel-3.png'); 
     background-size: cover;
     background-position: center center;
 }
 
 .banner-carrossel[data-pagina="3"] {
-    background-image: url('imagens/carrossel-2.png'); 
+    background-image: url('../imagens/carrossel-2.png'); 
     background-size: cover;
     background-position: center center;
 }
@@ -344,6 +352,8 @@ main{
     cursor: pointer;
 }
 
+/*Quem Somos*/
+
 .container-info{
     width: 100%;
     background-color: var(--cor7);
@@ -393,6 +403,8 @@ main{
     background-color: var(--cor8);
     background-image: url(imagens/fundo-quem-somos.png); 
 }
+
+/*Serviços*/
 
 .servicos1{
     width: 70%;
@@ -456,6 +468,8 @@ main{
     display: none;
 }
 
+/*Profissionais*/
+
 .profissionais{
     width: 65%;
     padding: 10px;
@@ -513,6 +527,8 @@ main{
     color: var(--cor2);
     text-align: center;
 }
+
+/*Avaliações*/
 
 .avaliacoes {   
     display: flex;
@@ -608,6 +624,8 @@ hr {
 .btnComentarioMobile{
     display: none;
 }
+
+/*Formulario*/
 
 .contato{
     height: 745px;
@@ -750,6 +768,8 @@ span{
     display: none;
 }
 
+/*Footer*/
+
 footer{
     width: 100%;
     background-color: var(--cor1);
@@ -763,7 +783,7 @@ footer{
 }
 
 .rodape{
-    width: 75%;
+    width: 80%;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
@@ -772,7 +792,7 @@ footer{
 
 .conteudo-footer{
     display: flex;
-    gap: 90px;
+    justify-content: space-around;
 }
 
 #imagem-blocos{

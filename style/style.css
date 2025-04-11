@@ -792,7 +792,8 @@ footer{
 
 .conteudo-footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 #imagem-blocos{
